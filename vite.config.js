@@ -14,6 +14,22 @@ const pages = {
   aloe: {
     file: 'pages/articles/aloe.html',
     chunks: ['/javascripts/allStyles.js']
+  },
+  guides: {
+    file: 'pages/guides.html',
+    chunks: ['/javascripts/allStyles.js']
+  },
+  eventcatalog: {
+    file: 'pages/eventcatalog.html',
+    chunks: ['/javascripts/allStyles.js']
+  },
+  event: {
+    file: 'pages/event.html',
+    chunks: ['/javascripts/allStyles.js']
+  },
+  analyses: {
+    file: 'pages/analyses.html',
+    chunks: ['/javascripts/allStyles.js']
   }
 }
 
@@ -29,7 +45,9 @@ function pageChunksPlugin() {
         .relative(root, ctx.filename)
         .split(path.sep)
         .join('/')
+
       const chunks = chunksByFile[relFile]
+
       if (!chunks) return html
 
       return {
@@ -46,7 +64,7 @@ function pageChunksPlugin() {
 
 export default defineConfig(({ command }) => ({
   root,
-  base: command === 'build' ? '/static-site-09-25/' : '/',
+  base: command === 'build' ? '/re-case/' : '/',
   plugins: [pageChunksPlugin()],
   build: {
     outDir,

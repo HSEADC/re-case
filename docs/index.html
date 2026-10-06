@@ -5,7 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>  <script type="module" src="/javascripts/index.js"></script>
-  <script type="module" src="/javascripts/allStyles.js"></script>
-</body>
+  <body>
+    <nav>
+      <a href="./pages/guides.html">Гайды</a>
+      <a href="./pages/eventcatalog.html">Каталог мероприятий</a>
+      <a href="./pages/event.html">Страница мероприятия</a>
+      <a href="./pages/analyses.html">Разборы кейсов</a>
+    </nav>
+
+    <!-- modify this form HTML and place wherever you want your form -->
+    <form action="https://formspree.io/f/maeqyzke" method="POST">
+      <label>
+        Your email:
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <!-- your other form fields go here -->
+      <button type="submit">Send</button>
+    </form>
+    <script type="module" src="/javascripts/index.js"></script>
+    <script type="module" src="/javascripts/allStyles.js"></script>
+  </body>
 </html>
