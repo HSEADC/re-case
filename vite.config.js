@@ -30,6 +30,22 @@ const pages = {
   analyses: {
     file: 'pages/analyses.html',
     chunks: ['/javascripts/allStyles.js']
+  },
+  about: {
+    file: 'pages/about.html',
+    chunks: ['/javascripts/allStyles.js']
+  },
+  way: {
+    file: 'pages/way.html',
+    chunks: ['/javascripts/allStyles.js']
+  },
+  banktests: {
+    file: 'pages/banktests.html',
+    chunks: ['/javascripts/allStyles.js']
+  },
+  support: {
+    file: 'pages/support.html',
+    chunks: ['/javascripts/allStyles.js']
   }
 }
 
