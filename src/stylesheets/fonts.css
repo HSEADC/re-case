@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Ermilov';
+  src: url('../fonts/Ermilov-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Onest';
+  src: url('../fonts/Onest-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'Onest';
+  src: url('../fonts/Onest-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: medium;
+}
+@font-face {
+  font-family: 'Onest';
+  src: url('../fonts/Onest-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: regular;
+}

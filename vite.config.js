@@ -40,31 +40,36 @@ const chunksByFile = Object.fromEntries(
 function pageChunksPlugin() {
   return {
     name: 'page-chunks',
-    transformIndexHtml(html, ctx) {
-      const relFile = path
-        .relative(root, ctx.filename)
-        .split(path.sep)
-        .join('/')
+    // order: 'pre' — скрипты добавляются до сборки, поэтому Vite их собирает
+    transformIndexHtml: {
+      order: 'pre',
+      handler(html, ctx) {
+        const relFile = path
+          .relative(root, ctx.filename)
+          .split(path.sep)
+          .join('/')
 
-      const chunks = chunksByFile[relFile]
+        const chunks = chunksByFile[relFile]
 
-      if (!chunks) return html
+        if (!chunks) return html
 
-      return {
-        html,
-        tags: chunks.map((src) => ({
-          tag: 'script',
-          attrs: { type: 'module', src },
-          injectTo: 'body'
-        }))
+        return {
+          html,
+          tags: chunks.map((src) => ({
+            tag: 'script',
+            attrs: { type: 'module', src },
+            injectTo: 'body'
+          }))
+        }
       }
     }
   }
 }
 
-export default defineConfig(({ command }) => ({
+// /re-case/ нужен и для сборки, и для её просмотра через yarn start
+export default defineConfig(({ command, isPreview }) => ({
   root,
-  base: command === 'build' ? '/re-case/' : '/',
+  base: command === 'build' || isPreview ? '/re-case/' : '/',
   plugins: [pageChunksPlugin()],
   build: {
     outDir,

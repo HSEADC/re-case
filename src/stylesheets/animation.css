@@ -1,0 +1,13 @@
+.cursor {
+  animation: blink 0.8s steps(1) infinite;
+}
+
+.typing .cursor {
+  animation: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
