@@ -11,3 +11,102 @@
     opacity: 0;
   }
 }
+
+.computer {
+  animation: levitate 4s ease-in-out infinite;
+}
+
+@keyframes levitate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2rem);
+  }
+}
+
+.bubble {
+  opacity: 0;
+  animation: bubbleUp 8s ease-in infinite;
+}
+
+.bubble1 {
+  animation-duration: 9s;
+  animation-delay: -1s;
+}
+.bubble2 {
+  animation-duration: 7s;
+  animation-delay: -4s;
+  animation-name: bubbleUpLeft;
+}
+.bubble3 {
+  animation-duration: 10s;
+  animation-delay: -6s;
+}
+.bubble4 {
+  animation-duration: 6.5s;
+  animation-delay: -2.5s;
+  animation-name: bubbleUpLeft;
+}
+.bubble5 {
+  animation-duration: 8s;
+  animation-delay: -5s;
+}
+
+@keyframes bubbleUp {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.6);
+  }
+  15% {
+    opacity: 1;
+  }
+  35% {
+    transform: translate(1.5rem, -14rem) scale(0.9);
+  }
+  65% {
+    transform: translate(-1.5rem, -28rem) scale(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(1rem, -42rem) scale(1.1);
+  }
+}
+
+@keyframes bubbleUpLeft {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.6);
+  }
+  15% {
+    opacity: 1;
+  }
+  35% {
+    transform: translate(-1.5rem, -14rem) scale(0.9);
+  }
+  65% {
+    transform: translate(1.5rem, -28rem) scale(1);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-1rem, -42rem) scale(1.1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .computer,
+  .bubble {
+    animation: none;
+  }
+
+  .bubble {
+    opacity: 1;
+  }
+}

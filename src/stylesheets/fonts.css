@@ -23,3 +23,10 @@
   font-weight: 400;
   font-style: regular;
 }
+
+@font-face {
+  font-family: 'PixelifySan';
+  src: url('../fonts/PixelifySans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: bold;
+}

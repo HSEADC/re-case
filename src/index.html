@@ -9,14 +9,20 @@
     <section class="sec1">
       <a class="logo" href="./index.html"></a>
       <nav class="mainMenu">
-        <a class="mainMenuLink" href="./pages/way.html">Путь джуна</a>
-        <a class="mainMenuLink" href="./pages/banktests.html">Банк тестовых</a>
-        <a class="mainMenuLink" href="./pages/support.html">Раздел поддержки</a>
-        <a class="mainMenuLink" href="./pages/about.html">О проекте</a>
+        <div class="dropdown">
+          <button class="mainMenuLink menuWay dropdownToggle" type="button">
+            Путь джуна
+          </button>
+          <div class="dropdownMenu">
+            <a class="mainMenuLink menuInterview" href="./pages/interview.html"
+              >Интервью HR</a
+            >
+          </div>
+        </div>
+        <a class="mainMenuLink menuAbout" href="./pages/about.html">О проекте</a>
       </nav>
       <div class="hero-bg"></div>
       <div class="decor"></div>
-      <a class="button1" href="#">Хочу быть частью Рекейса!</a>
       <p class="text1">
         Я не только <br />
         хороший
@@ -58,7 +64,6 @@
           что же действительно <br />
           хотят от джуна?
         </p>
-        <a class="cardButton1" href="#">Открыть банк</a>
       </div>
 
       <div class="card2">
@@ -68,7 +73,6 @@
           собесы, кейсы, кого хотят видеть перед собой <br />
           в компании!
         </p>
-        <a class="cardButton2" href="#">Читать статьи</a>
       </div>
 
       <div class="card3">
@@ -78,7 +82,6 @@
           получать отказы или боятся <br />
           начать...
         </p>
-        <a class="cardButton3" href="#">Узнать</a>
       </div>
 
       <div class="row">
@@ -87,7 +90,7 @@
         <p class="step3">Портфолио</p>
         <p class="step4">Тестовое</p>
         <p class="step5">???</p>
-        <p class="step6">Туда сюда крутой дизайнер</p>
+        <p class="step6">Туда сюда крутой специалист</p>
       </div>
     </section>
 
@@ -160,7 +163,7 @@
         Ваша история, когда-то сохранившееся тестовое, <br />
         старое решение решения кейса — мы ждём!
       </p>
-      <a class="button5" href="#">Предложить</a>
+      <p class="button5">Скоро</p>
     </section>
 
     <section class="section6">
@@ -170,7 +173,6 @@
       </p>
       <p class="text6">Не пропусти главное с командой РЕ:КЕЙС</p>
 
-      <!-- форма -->
       <form class="form" action="https://formspree.io/f/maeqyzke" method="POST">
         <input
           class="formEmail"
