@@ -17,7 +17,11 @@ const pages = {
   },
   about: {
     file: 'pages/about.html',
-    chunks: ['/javascripts/menu.js', '/javascripts/allStyles.js']
+    chunks: [
+      '/javascripts/menu.js',
+      '/javascripts/about.js',
+      '/javascripts/allStyles.js'
+    ]
   },
   interview: {
     file: 'pages/interview.html',

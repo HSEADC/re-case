@@ -1,0 +1,23 @@
+<svg width="358" height="53" viewBox="0 0 358 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="1.17188" width="356" height="50" stroke="#E7267A" stroke-width="2"/>
+<path d="M0 43H10V53H0V43Z" fill="#F7F7F7"/>
+<mask id="stroke0_65_4396" fill="white">
+<path d="M0 43H10V53H0V43Z"/>
+</mask>
+<path d="M10 43H12V41H10V43ZM0 43V45H10V43V41H0V43ZM10 43H8V53H10H12V43H10Z" fill="#E7267A" mask="url(#stroke0_65_4396)"/>
+<path d="M358 43H348V53H358V43Z" fill="#F7F7F7"/>
+<mask id="stroke1_65_4396" fill="white">
+<path d="M358 43H348V53H358V43Z"/>
+</mask>
+<path d="M348 43H346V41H348V43ZM358 43V45H348V43V41H358V43ZM348 43H350V53H348H346V43H348Z" fill="#E7267A" mask="url(#stroke1_65_4396)"/>
+<path d="M10 0V10H0V0H10Z" fill="#F7F7F7"/>
+<mask id="stroke2_65_4396" fill="white">
+<path d="M10 0V10H0V0H10Z"/>
+</mask>
+<path d="M10 10V12H12V10H10ZM10 0H8V10H10H12V0H10ZM10 10V8H0V10V12H10V10Z" fill="#E7267A" mask="url(#stroke2_65_4396)"/>
+<path d="M348 0V10H358V0H348Z" fill="#F7F7F7"/>
+<mask id="stroke3_65_4396" fill="white">
+<path d="M348 0V10H358V0H348Z"/>
+</mask>
+<path d="M348 10V12H346V10H348ZM348 0H350V10H348H346V0H348ZM348 10V8H358V10V12H348V10Z" fill="#E7267A" mask="url(#stroke3_65_4396)"/>
+</svg>

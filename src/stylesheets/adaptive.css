@@ -1,0 +1,943 @@
+/* МОБИЛЬНАЯ ВЕРСИЯ (до 767px) */
+@media (max-width: 767px) {
+  /* 1rem = 10px макета шириной 390px */
+  html {
+    font-size: calc(100vw / 39);
+  }
+
+  /* первый экран */
+  .sec1 {
+    height: 45.3rem;
+  }
+
+  .hero-bg {
+    height: 45.3rem;
+    background-size: cover;
+  }
+
+  .decor {
+    top: 7rem;
+    left: 0;
+    width: 39rem;
+    height: 38.4rem;
+    background: url(../images/bgrmobile1.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .logo {
+    top: 2.3rem;
+    left: 1.5rem;
+    width: 13.8rem;
+    height: 2.95rem;
+  }
+
+  /* бургер */
+  .burger {
+    display: block;
+    position: absolute;
+    top: 2.2rem;
+    right: 1.6rem;
+    z-index: 6;
+    width: 3.3rem;
+    height: 2.5rem;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/burger.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+
+  .menuOpen .burger {
+    width: 2.7rem;
+    height: 2.6rem;
+    background-image: url(../images/close.svg);
+  }
+
+  .menuOpen {
+    overflow: hidden;
+  }
+
+  /* меню: салатовая панель под шапкой */
+  .mainMenu {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.4rem;
+    padding-top: 15.4rem;
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 41.7rem;
+    background-image: url(../images/menubgrmob.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: none;
+  }
+
+  .menuOpen .mainMenu {
+    display: flex;
+  }
+
+  /* бледная заливка страницы под открытым меню */
+  .menuOpen::before {
+    content: '';
+    position: fixed;
+    top: 7rem;
+    left: 0;
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  .mainMenuLink {
+    gap: 0.8rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  .mainMenuLink::before {
+    display: none;
+  }
+
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dropdownToggle::after {
+    width: 2.4rem;
+    height: 1.4rem;
+    transform: rotate(0deg);
+  }
+
+  .dropdown.open .dropdownToggle::after {
+    transform: rotate(180deg);
+  }
+
+  .dropdownMenu {
+    position: static;
+    display: none;
+    padding-top: 2.4rem;
+  }
+
+  .dropdown.open .dropdownMenu {
+    display: block;
+  }
+
+  /* заголовки первого экрана */
+  .text1 {
+    top: 17rem;
+    left: 2.9rem;
+    font-size: 2.1rem;
+    letter-spacing: 0;
+  }
+
+  .text2 {
+    top: 24rem;
+    left: 6rem;
+    font-size: 3.8rem;
+    letter-spacing: 0;
+  }
+
+  /* розовая секция с текстом */
+  .section2 {
+    height: 22.7rem;
+    background-image: url(../images/bgrmobile.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .shapes {
+    display: none;
+  }
+
+  .text3,
+  .text4 {
+    left: 1.8rem;
+    width: 25rem;
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .text3 {
+    top: 2.6rem;
+  }
+
+  .text4 {
+    top: 14.4rem;
+  }
+
+  .text4 br {
+    display: none;
+  }
+
+  /* всё начинается с точки */
+  .section3 {
+    height: 63.45rem;
+  }
+
+  .wallpaper3 {
+    height: 63.45rem;
+    background-size: cover;
+  }
+
+  .title3 {
+    top: 3.8rem;
+    left: 1.4rem;
+    font-size: 3rem;
+    letter-spacing: -0.1rem;
+  }
+
+  /* карточки листаются пальцем вбок */
+  .cards {
+    display: flex;
+    gap: 1.1rem;
+    position: absolute;
+    top: 13.75rem;
+    left: 0;
+    width: 100vw;
+    padding: 0 1.2rem 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    flex-shrink: 0;
+    height: 36.3rem;
+    background-size: 100% 100%;
+    scroll-snap-align: start;
+    scroll-margin-left: 1.2rem;
+  }
+
+  .card1 {
+    width: 19.6rem;
+  }
+
+  .card2 {
+    width: 36.7rem;
+  }
+
+  .card3 {
+    width: 19.55rem;
+  }
+
+  .cardTitle {
+    top: 26.3rem;
+    left: 1.7rem;
+    font-size: 1.7rem;
+  }
+
+  .cardText {
+    top: 29rem;
+    left: 1.7rem;
+    width: 12rem;
+    font-size: 1.3rem;
+    line-height: 1.55rem;
+  }
+
+  .hideMobile {
+    display: none;
+  }
+
+  .cardText br {
+    display: none;
+  }
+
+  .cardTextBig {
+    width: 16rem;
+  }
+
+  /* розовая полоса со стрелками */
+  .row {
+    top: 49.65rem;
+    height: 17.3rem;
+    background-image: url(../images/bgrmobile3.svg);
+  }
+
+  .step1,
+  .step2,
+  .step3,
+  .step4,
+  .step5,
+  .step6 {
+    font-size: 1.6rem;
+  }
+
+  .step1 {
+    top: 6rem;
+    left: 3.2rem;
+  }
+  .step2 {
+    top: 6rem;
+    left: 12.5rem;
+  }
+  .step3 {
+    top: 6rem;
+    left: 25rem;
+  }
+  .step4 {
+    top: 8.3rem;
+    left: 10.8rem;
+  }
+  .step5 {
+    top: 8.3rem;
+    left: 25rem;
+  }
+  .step6 {
+    top: 10.4rem;
+    left: 0;
+    width: 39rem;
+    text-align: center;
+  }
+
+  /* вместо десятка каналов */
+  .section4 {
+    height: 134.5rem;
+  }
+
+  .wallpaper4 {
+    height: 134.5rem;
+    background-size: cover;
+  }
+
+  .title4 {
+    top: 4.3rem;
+    left: 1.6rem;
+    width: 30rem;
+    font-size: 2.6rem;
+    letter-spacing: -0.1rem;
+    white-space: normal;
+  }
+
+  .channels {
+    display: flex;
+    flex-direction: column;
+    gap: 1.526rem;
+    top: 11.35rem;
+    left: 0.8rem;
+    width: 36.6rem;
+    height: auto;
+    background: none;
+  }
+
+  .channel1,
+  .channel2,
+  .channel3,
+  .channel4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 35.8rem;
+    height: auto;
+    margin-left: 0.8rem;
+    padding: 9.2rem 1.8rem 2.2rem;
+  }
+
+  .channelIcon {
+    top: 2rem;
+    left: 1.8rem;
+    width: 4.824rem;
+    height: 4.824rem;
+  }
+
+  .channelNum {
+    top: 2rem;
+    right: 1rem;
+    font-size: 4.6rem;
+  }
+
+  .channelTitle {
+    font-size: 1.7rem;
+  }
+
+  .channelText {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+  }
+
+  .channelText br {
+    display: none;
+  }
+
+  /* теги: рамки — картинки Chipsmob, переносятся на две строки */
+  .tags {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    height: auto;
+    margin-top: 1.3rem;
+  }
+
+  .tags1 {
+    width: 27.9rem;
+    height: 7.6rem;
+    background-image: url(../images/Chipsmob1.svg);
+  }
+  .tags2 {
+    width: 22rem;
+    height: 7.6rem;
+    background-image: url(../images/Chipsmob2.svg);
+  }
+  .tags3 {
+    width: 30.3rem;
+    height: 3.4rem;
+    background-image: url(../images/Chipsmob3.svg);
+  }
+  .tags4 {
+    width: 7.3rem;
+    height: 3.4rem;
+    background-image: url(../images/Chipsmob4.svg);
+  }
+
+  .tag {
+    height: 3.4rem;
+    font-size: 1.2rem;
+  }
+
+  .tags1 .tag:nth-child(1) {
+    width: 11.9rem;
+  }
+  .tags1 .tag:nth-child(2) {
+    width: 15.2rem;
+  }
+  .tags1 .tag:nth-child(3) {
+    width: 9.7rem;
+  }
+  .tags1 .tag:nth-child(4) {
+    width: 14.2rem;
+  }
+
+  .tags2 .tag:nth-child(1) {
+    width: 8.5rem;
+  }
+  .tags2 .tag:nth-child(2) {
+    width: 12.7rem;
+  }
+  .tags2 .tag:nth-child(3) {
+    width: 15.2rem;
+  }
+
+  .tags3 .tag:nth-child(1) {
+    width: 11.3rem;
+  }
+  .tags3 .tag:nth-child(2) {
+    width: 18.2rem;
+  }
+
+  .tags4 .tag {
+    width: 7.3rem;
+  }
+
+  /* станьте частью */
+  .section5 {
+    height: 24.2rem;
+    background-image: none;
+    background-color: #bdf735;
+  }
+
+  .title5 {
+    top: 3.2rem;
+    left: 0;
+    width: 39rem;
+    font-size: 2.25rem;
+    text-align: center;
+  }
+
+  .text5 {
+    top: 7rem;
+    left: 9.5rem;
+    width: 20rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+
+  .text5 br {
+    display: none;
+  }
+
+  .button5 {
+    top: 16.1rem;
+    left: 1.6rem;
+    width: 35.8rem;
+    height: 5.4rem;
+    padding-top: 0;
+    background-image: url(../images/butmob1.svg);
+    font-size: 1.6rem;
+  }
+
+  /* подвал */
+  .section6 {
+    height: 42.45rem;
+    background-size: cover;
+  }
+
+  .title6 {
+    top: 3.6rem;
+    left: 4.5rem;
+    width: 30rem;
+    font-size: 2.5rem;
+  }
+
+  .text6 {
+    top: 16.1rem;
+    font-size: 1.6rem;
+  }
+
+  /* форма подписки */
+  .formEmail {
+    top: 19.8rem;
+    left: 1.6rem;
+    width: 35.8rem;
+    height: 5.7rem;
+    padding-left: 4.6rem;
+    background-size: 2.2rem 1.5rem;
+    background-position: 1.4rem 1.8rem;
+    font-size: 1.4rem;
+  }
+
+  .formButton {
+    top: 26.5rem;
+    left: 7.8rem;
+    width: 26.2rem;
+    height: 10.5rem;
+    padding: 1.4rem 4.2rem 2.5rem 1.25rem;
+    font-size: 1.4rem;
+  }
+
+  /* СТРАНИЦА ИНТЕРВЬЮ */
+  .interviewPage {
+    background-size: 32rem 32rem;
+  }
+
+  /* первый экран */
+  .header {
+    height: 7.35rem;
+  }
+
+  .interviewHero {
+    height: 53.55rem;
+  }
+
+  .cover {
+    top: 7.35rem;
+    left: 1.6rem;
+    width: 35.8rem;
+    height: 46.2rem;
+    background-image: none;
+    background-color: #ec2a7c;
+  }
+
+  .computer {
+    top: 1rem;
+    left: 10rem;
+    width: 34rem;
+    height: 25.4rem;
+    opacity: 0.6;
+  }
+
+  .breadcrumbs {
+    top: 14rem;
+    left: 3.5rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  .heroTags {
+    top: 17.35rem;
+    left: 3.4rem;
+    width: 24.2rem;
+    height: 3.6rem;
+  }
+
+  .heroTag {
+    font-size: 1.3rem;
+  }
+
+  .heroTag:nth-child(1) {
+    width: 8.3rem;
+  }
+  .heroTag:nth-child(2) {
+    width: 9.8rem;
+  }
+  .heroTag:nth-child(3) {
+    width: 4.1rem;
+  }
+
+  .interviewTitle {
+    top: 22.95rem;
+    left: 3.5rem;
+    width: 29rem;
+    font-size: 2.6rem;
+    line-height: 2.9rem;
+    white-space: normal;
+  }
+
+  .meta {
+    grid-template-columns: 15.7rem 13rem;
+    row-gap: 0.7rem;
+    top: 30.75rem;
+    left: 2.6rem;
+    width: 33rem;
+    height: 21.2rem;
+    padding: 1.9rem 0 0 2.6rem;
+    background-image: url(../images/ramochkf.svg);
+  }
+
+  .metaItem {
+    padding-right: 2.9rem;
+  }
+
+  .metaLabel {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+  }
+
+  .metaText {
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  /* звёздочки */
+  .bubble1 {
+    top: 22rem;
+    left: 31.5rem;
+    width: 2.6rem;
+    height: 3.1rem;
+  }
+  .bubble2 {
+    top: 25.5rem;
+    left: 32.5rem;
+    width: 1.8rem;
+    height: 1.9rem;
+  }
+  .bubble3 {
+    top: 24rem;
+    left: 34.5rem;
+    width: 2.6rem;
+    height: 2.2rem;
+  }
+  .bubble4 {
+    top: 25rem;
+    left: 31rem;
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .bubble5 {
+    top: 23rem;
+    left: 35.5rem;
+    width: 1.5rem;
+    height: 1.9rem;
+  }
+
+  @keyframes bubbleUp {
+    0% {
+      opacity: 0;
+      transform: translate(0, 0) scale(0.6);
+    }
+    15% {
+      opacity: 1;
+    }
+    35% {
+      transform: translate(0.6rem, -5rem) scale(0.9);
+    }
+    65% {
+      transform: translate(-0.6rem, -10rem) scale(1);
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(0.4rem, -15rem) scale(1.1);
+    }
+  }
+
+  @keyframes bubbleUpLeft {
+    0% {
+      opacity: 0;
+      transform: translate(0, 0) scale(0.6);
+    }
+    15% {
+      opacity: 1;
+    }
+    35% {
+      transform: translate(-0.6rem, -5rem) scale(0.9);
+    }
+    65% {
+      transform: translate(0.6rem, -10rem) scale(1);
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-0.4rem, -15rem) scale(1.1);
+    }
+  }
+
+  /* навигация */
+  .interview {
+    display: block;
+    padding: 4rem 1.6rem 0;
+  }
+
+  .questionsMenu {
+    position: static;
+    width: 35.8rem;
+    height: auto;
+    padding: 0;
+    overflow: visible;
+    background-color: #bdf735;
+  }
+
+  .questionsMenu.open {
+    background-color: #ffffff;
+  }
+
+  .questionsTitle {
+    display: none;
+  }
+
+  .navToggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5.25rem;
+    padding: 0 1.5rem 0 1.75rem;
+    border: none;
+    background-color: transparent;
+    font-family: 'Ermilov';
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #0f1d3a;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .navToggle::after {
+    content: '';
+    width: 3.8rem;
+    height: 2.3rem;
+    background-image: url(../images/galk.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all ease 0.2s;
+  }
+
+  .questionsMenu.open .navToggle::after {
+    transform: rotate(180deg);
+  }
+
+  .questionsList {
+    display: none;
+    padding: 0.45rem 1.6rem 2rem;
+  }
+
+  .questionsMenu.open .questionsList {
+    display: flex;
+  }
+
+  .questionLink {
+    grid-template-columns: 3rem 1fr;
+    padding: 0.8rem 1.35rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.65rem;
+  }
+
+  .questionLink.active {
+    padding: 0.7rem 1.35rem;
+    font-size: 1.45rem;
+    line-height: 1.95rem;
+  }
+
+  .questionLink br {
+    display: none;
+  }
+
+  .questionNum {
+    padding-top: 0.1rem;
+  }
+
+  /* вопросы и ответы */
+  .answers {
+    width: auto;
+    margin-top: 4rem;
+  }
+
+  .qa {
+    display: block;
+    margin-bottom: 4.2rem;
+    scroll-margin-top: 2rem;
+  }
+
+  .qa:last-child {
+    margin-bottom: 0;
+  }
+
+  .qaLabel {
+    padding-top: 0;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+  }
+
+  .qaQuestion {
+    margin-top: 0.8rem;
+    padding: 1.5rem 1.2rem 1.5rem 1.6rem;
+    box-shadow: 0 0.55rem 0 #0f1d3a;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+
+  .qa .qaLabel:nth-of-type(3),
+  .qaAnswer,
+  .qaResult {
+    display: none;
+  }
+
+  .qa.open .qaLabel:nth-of-type(3) {
+    display: block;
+    margin-top: 2.2rem;
+  }
+
+  .qa.open .qaAnswer,
+  .qa.open .qaResult {
+    display: block;
+  }
+
+  .qaAnswer {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+
+  .qaAnswer p + p {
+    margin-top: 2.3rem;
+  }
+
+  .qaResult {
+    min-height: 0;
+    margin-top: 2.3rem;
+    padding: 1.5rem 1.6rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+
+  /* кнопка открыть / закрыть */
+  .qaToggle {
+    display: block;
+    width: 35.8rem;
+    height: 5.3rem;
+    margin-top: 2.4rem;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/btmob.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Ermilov';
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease 0.2s;
+  }
+
+  .qa.open .qaToggle {
+    background-image: url(../images/btmob2.svg);
+    color: #ec2a7c;
+  }
+
+  @media (hover: hover) {
+    .qaToggle:hover {
+      background-image: url(../images/btmob2.svg);
+      color: #ec2a7c;
+    }
+
+    .qa.open .qaToggle:hover {
+      background-image: url(../images/btmobhover2.svg);
+      color: #ffffff;
+    }
+  }
+
+  /* ещё статьи */
+  .moreArticles {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    height: auto;
+    padding: 29.85rem 0 8rem 0.8rem;
+  }
+
+  .toTop {
+    top: 3.55rem;
+    height: 17.3rem;
+    padding: 0 0 0.6rem;
+    background-image: url(../images/Stripemob.svg);
+    font-size: 1.8rem;
+  }
+
+  .moreLabel {
+    top: 22.6rem;
+    left: 1.6rem;
+    font-size: 1.5rem;
+  }
+
+  .moreTitle {
+    top: 25.5rem;
+    left: 1.6rem;
+    font-size: 2.35rem;
+  }
+
+  .article {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 35.8rem;
+    height: 23.8rem;
+    margin-left: 0.8rem;
+  }
+
+  .article3 {
+    height: 23.8rem;
+  }
+
+  .article::before {
+    height: 13rem;
+  }
+
+  .articleTags {
+    top: 14.6rem;
+    left: 1.6rem;
+    transform: scale(0.906);
+    transform-origin: left top;
+  }
+
+  .articleSoon {
+    top: 19.4rem;
+    left: 1.65rem;
+    font-size: 1.7rem;
+  }
+}

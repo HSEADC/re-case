@@ -100,8 +100,19 @@
   }
 }
 
+.stars {
+  animation: levitate 4s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .computer,
+  .stars,
   .bubble {
     animation: none;
   }

@@ -1,0 +1,25 @@
+<svg width="366" height="315" viewBox="0 0 366 315" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_d_62_3818)">
+<rect x="8" width="358" height="306.24" fill="white"/>
+<rect x="10" y="2" width="354" height="302.24" stroke="#0F1D3A" stroke-width="4"/>
+<use xlink:href="#stroke0_62_3818" fill="white"/>
+<mask id="stroke1_62_3818" maskUnits="userSpaceOnUse" x="294" y="22" width="61" height="42" fill="black">
+<rect fill="white" x="294" y="22" width="61" height="42"/>
+<use xlink:href="#stroke0_62_3818"/>
+</mask>
+<path d="M304.556 57.484V53.744H300.684V32.712H304.556V28.928H317.932V32.712H321.848V53.744H317.932V57.484H304.556ZM306.272 51.5H316.216V34.956H306.272V51.5ZM331.068 57.484V53.744H327.196V43.932H331.068V40.236H342.728V34.956H332.784V38.696H327.196V32.712H331.068V28.928H344.444V32.712H348.36V42.436H344.444V46.176H332.784V51.5H342.728V47.716H348.36V53.744H344.444V57.484H331.068Z" stroke-width="12.1176" stroke="#EC2A7C" mask="url(#stroke1_62_3818)"/>
+<rect width="48.24" height="48.24" transform="translate(30 24)" fill="#EC2A7C"/>
+<path d="M40.7207 38.0703H50.7707V41.4203H40.7207V38.0703ZM40.7207 41.4203H67.5207V44.7703H40.7207V41.4203ZM40.7207 44.7703H44.0707V48.1203H40.7207V44.7703ZM64.1707 44.7703H67.5207V48.1203H64.1707V44.7703ZM40.7207 48.1203H44.0707V51.4703H40.7207V48.1203ZM64.1707 48.1203H67.5207V51.4703H64.1707V48.1203ZM40.7207 51.4703H44.0707V54.8203H40.7207V51.4703ZM64.1707 51.4703H67.5207V54.8203H64.1707V51.4703ZM40.7207 54.8203H67.5207V58.1703H40.7207V54.8203Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d_62_3818" x="0" y="0" width="366" height="314.238" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-8" dy="8"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0588235 0 0 0 0 0.113725 0 0 0 0 0.227451 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_62_3818"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_62_3818" result="shape"/>
+</filter>
+<path id="stroke0_62_3818" d="M304.556 57.484V53.744H300.684V32.712H304.556V28.928H317.932V32.712H321.848V53.744H317.932V57.484H304.556ZM306.272 51.5H316.216V34.956H306.272V51.5ZM331.068 57.484V53.744H327.196V43.932H331.068V40.236H342.728V34.956H332.784V38.696H327.196V32.712H331.068V28.928H344.444V32.712H348.36V42.436H344.444V46.176H332.784V51.5H342.728V47.716H348.36V53.744H344.444V57.484H331.068Z"/>
+</defs>
+</svg>

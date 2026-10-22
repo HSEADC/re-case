@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>О проекте</title>
   </head>
-  <body>
+  <body class="aboutPage">
     <header class="header">
       <a class="logo" href="../index.html"></a>
+        <button class="burger" type="button" aria-label="Меню"></button>
       <nav class="mainMenu">
         <div class="dropdown">
           <button class="mainMenuLink menuWay dropdownToggle" type="button">
@@ -20,11 +21,188 @@
           </div>
         </div>
         <a class="mainMenuLink menuAbout active" href="./about.html" aria-current="page"
-          >О проекте</a
+          >О&nbsp;проекте</a
         >
       </nav>
     </header>
 
-    <h1>О проекте</h1>
+    <section class="aboutHero">
+      <h1 class="aboutHeroTitle"><span class="aboutHeroLogo">РЕ:КЕЙС</span> Кто мы?</h1>
+    </section>
+
+    <section class="about">
+      <h2 class="aboutTitle">Основное о&nbsp;нашем проекте</h2>
+      <p class="aboutIntro">
+        Медиагайд для&nbsp;тех, кто&nbsp;ищет первую работу. Путь джуна, реальные тестовые,<br />
+        интервью с&nbsp;HR и&nbsp;поддержка&nbsp;— в&nbsp;одном месте и&nbsp;без&nbsp;лишней теории.
+      </p>
+
+      <div class="aboutBlock aboutWhy">
+        <h3 class="aboutHeading"><span class="aboutNum">01</span>Зачем мы&nbsp;это делаем</h3>
+        <div class="whyText">
+          <p>
+            Поиск первой работы часто похож на&nbsp;квест без&nbsp;карты<br />
+            и&nbsp;мы очень это понимаем, так как&nbsp;сами столкнулись когда-то<br />
+            с&nbsp;этим. Советы разбросаны по&nbsp;десяткам каналов, требования<br />
+            компаний непонятны, а&nbsp;каждый отказ ощущается как&nbsp;приговор<br />
+            и&nbsp;в&nbsp;какой-то момент хочется просто раствориться<br />
+            с&nbsp;бесконечным вечным.
+          </p>
+          <p>
+            РЕ:КЕЙС собирает всё, что&nbsp;нужно джуну (и&nbsp;даже HR) и&nbsp;в&nbsp;одном<br />
+            месте и&nbsp;объясняет найм изнутри: с&nbsp;реальными тестовыми,<br />
+            разборами и&nbsp;опытом тех, кто&nbsp;сам проходит этот путь, и&nbsp;тех,<br />
+            кто&nbsp;нанимает.
+          </p>
+        </div>
+        <div class="mission">
+          <p class="missionTitle">Наша миссия!!</p>
+          <p class="missionText">
+            «Благодаря РЕ:КЕЙС мы хотим снизить<br />
+            уровень тревожности у&nbsp;джунов, повысить<br />
+            осведомленность в&nbsp;найме и&nbsp;дать<br />
+            им&nbsp;возможность пройти этот путь<br />
+            с&nbsp;ощущением крутого сайд-квеста,<br />
+            а&nbsp;не&nbsp;тотального ада»
+          </p>
+        </div>
+        <div class="stars"></div>
+      </div>
+
+      <div class="aboutBlock">
+        <h3 class="aboutHeading"><span class="aboutNum">02</span>Страшные столкновения</h3>
+        <div class="problems">
+          <div class="problem problem1">
+            <p class="problemNum">01</p>
+            <p class="problemTitle">Тотальный хаос <br />информации</p>
+            <p class="problemText">
+              Советы разбросаны по&nbsp;каналам, чатам <br />и&nbsp;статьям&nbsp;— непонятно, чему верить <br />и&nbsp;как&nbsp;начать.
+            </p>
+          </div>
+          <div class="problem problem2">
+            <p class="problemNum">02</p>
+            <p class="problemTitle">Чёрный ящик найма</p>
+            <p class="problemText">
+              Неясно, что&nbsp;на&nbsp;самом деле оценивают <br />в&nbsp;тестовом, о&nbsp;чем думают HR и&nbsp;нужно <br />ли&nbsp;портфолио на&nbsp;собеседовании?
+            </p>
+          </div>
+          <div class="problem problem3">
+            <p class="problemNum">03</p>
+            <p class="problemTitle">Страх отказов</p>
+            <p class="problemText">
+              Первые «нет» выбивают из&nbsp;колеи, <br />и&nbsp;кажется, что&nbsp;проблема в&nbsp;тебе, <br />а&nbsp;не&nbsp;в&nbsp;процессе.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutBlock">
+        <h3 class="aboutHeading"><span class="aboutNum">03</span>Для кого проект</h3>
+        <div class="audience">
+          <div class="forYou">
+            <p class="audienceTitle">Для тебя, если ты</p>
+            <ul class="checkList">
+              <li>Студент или&nbsp;выпускник и&nbsp;хочешь РАБОТАТЬ</li>
+              <li>Джун и&nbsp;хочешь сменить направление</li>
+              <li>ОЧЕЕЕНЬ боишься тестовых заданий и&nbsp;собеседований</li>
+              <li>Получаешь отказы и&nbsp;не&nbsp;понимаешь, что&nbsp;идёт не&nbsp;так</li>
+            </ul>
+          </div>
+          <div class="youGet">
+            <p class="audienceTitle">Что ты&nbsp;получишь</p>
+            <ul class="checkList">
+              <li>Реальные тестовые задания</li>
+              <li>Инсайды из&nbsp;интервью с&nbsp;HR разных компаний</li>
+              <li>Поддержку, когда уже совсем тяжело</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutBlock">
+        <h3 class="aboutHeading"><span class="aboutNum">04</span>А&nbsp;что&nbsp;мы вообще делаем для&nbsp;этого???</h3>
+        <div class="doList">
+          <div class="doItem open">
+            <button class="doTitle" type="button">Говорим с&nbsp;HR</button>
+            <div class="doBody">
+              <p class="doText">Берём интервью у&nbsp;рекрутеров и&nbsp;нанимающих менеджеров: что&nbsp;они ищут в&nbsp;джунах и&nbsp;что&nbsp;отталкивает.</p>
+            </div>
+          </div>
+          <div class="doItem">
+            <button class="doTitle" type="button">Мы&nbsp;собираем тестовые</button>
+            <div class="doBody">
+              <p class="doText">Копим реальные тестовые задания и&nbsp;решения, которыми делятся компании и&nbsp;кандидаты.</p>
+            </div>
+          </div>
+          <div class="doItem">
+            <button class="doTitle" type="button">Мы&nbsp;разбираем</button>
+            <div class="doBody">
+              <p class="doText">Объясняем, что&nbsp;оценивают в&nbsp;каждом задании и&nbsp;где&nbsp;чаще всего ошибаются.</p>
+            </div>
+          </div>
+          <div class="doItem">
+            <button class="doTitle" type="button">Мы&nbsp;поддерживаем</button>
+            <div class="doBody">
+              <p class="doText">Пишем о&nbsp;тревоге, страхе ошибок и&nbsp;о&nbsp;том, как&nbsp;пережить отказ и&nbsp;продолжить.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aboutBlock">
+        <h3 class="aboutHeading">Знай их в&nbsp;лицо</h3>
+        <div class="team">
+          <div class="member member1">
+            <p class="memberRole">Аналитик и&nbsp;соцсети</p>
+            <p class="memberName">Диана Спиридонова</p>
+            <div class="memberFigureBox">
+              <div class="memberFigure"></div>
+            </div>
+          </div>
+          <div class="member member2">
+            <p class="memberRole">Дизайнер</p>
+            <p class="memberName">Нино Чехерия</p>
+            <div class="memberFigureBox">
+              <div class="memberFigure"></div>
+            </div>
+          </div>
+          <div class="member member3">
+            <p class="memberRole">Разработчик</p>
+            <p class="memberName">Света Сафронова</p>
+            <div class="memberFigureBox">
+              <div class="memberFigure"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section5">
+      <p class="title5">Станьте частью РЕ:КЕЙС</p>
+      <p class="text5">
+        Ваша история, когда-то сохранившееся тестовое, <br />
+        старое решение решения кейса&nbsp;— мы&nbsp;ждём!
+      </p>
+      <p class="button5">Скоро</p>
+    </section>
+
+    <section class="section6">
+      <p class="title6">
+        Знай сейчас то, <br />
+        что&nbsp;будет в&nbsp;<span class="pink">будущем!</span>
+      </p>
+      <p class="text6">Не&nbsp;пропусти главное с&nbsp;командой РЕ:КЕЙС</p>
+
+      <form class="form" action="https://formspree.io/f/maeqyzke" method="POST">
+        <input
+          class="formEmail"
+          type="email"
+          name="email"
+          placeholder="Твоя почта"
+          required
+        />
+        <button class="formButton" type="submit">Подписаться</button>
+      </form>
+    </section>
   </body>
 </html>

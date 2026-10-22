@@ -60,3 +60,39 @@ toTop.addEventListener('click', function (event) {
   event.preventDefault()
   document.querySelector('#interview').scrollIntoView({ behavior: 'smooth' })
 })
+
+var navToggle = document.querySelector('.navToggle')
+
+navToggle.addEventListener('click', function () {
+  questionsMenu.classList.toggle('open')
+})
+
+function openAnswer(question) {
+  question.classList.add('open')
+  question.querySelector('.qaToggle').textContent = 'Закрыть'
+}
+
+function closeAnswer(question) {
+  question.classList.remove('open')
+  question.querySelector('.qaToggle').textContent = 'Открыть'
+}
+
+questions.forEach(function (question) {
+  question.querySelector('.qaToggle').addEventListener('click', function () {
+    if (question.classList.contains('open')) {
+      closeAnswer(question)
+    } else {
+      openAnswer(question)
+    }
+  })
+})
+
+questionLinks.forEach(function (link, i) {
+  link.addEventListener('click', function () {
+    if (questionsMenu.classList.contains('open')) {
+      questionsMenu.classList.remove('open')
+      openAnswer(questions[i])
+      questions[i].scrollIntoView({ behavior: 'smooth' })
+    }
+  })
+})

@@ -1,0 +1,1 @@
+import"./allStyles-DZR1HGBi.js";var o=document.querySelectorAll(".doItem");o.forEach(function(e){e.querySelector(".doTitle").addEventListener("click",function(){var n=e.classList.contains("open");o.forEach(function(c){c.classList.remove("open")}),n||e.classList.add("open")})});

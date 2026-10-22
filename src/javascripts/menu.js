@@ -10,3 +10,12 @@ document.addEventListener('click', function (event) {
     dropdown.classList.remove('open')
   }
 })
+
+var burger = document.querySelector('.burger')
+
+if (burger) {
+  burger.addEventListener('click', function () {
+    document.body.classList.toggle('menuOpen')
+    window.scrollTo(0, 0)
+  })
+}

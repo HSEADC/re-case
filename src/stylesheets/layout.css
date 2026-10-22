@@ -1,3 +1,4 @@
+/* общее */
 * {
   box-sizing: border-box;
 }
@@ -10,6 +11,9 @@ body {
   font-size: 1.6rem;
 }
 
+/* ГЛАВНАЯ СТРАНИЦА */
+
+/* первый экран */
 .sec1 {
   position: relative;
   width: 100vw;
@@ -36,6 +40,7 @@ body {
   background: url(../images/backgr1.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100% 100%;
   z-index: 0;
 }
 .decor {
@@ -45,8 +50,10 @@ body {
   background: url(../images/backgr2.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100% 100%;
   z-index: 1;
 }
+/* меню */
 .mainMenu {
   display: flex;
   align-items: center;
@@ -57,6 +64,7 @@ body {
   z-index: 3;
 }
 
+/* шапка на других страницах */
 .header {
   position: relative;
   z-index: 5;
@@ -64,6 +72,11 @@ body {
   height: 15.6rem;
 }
 
+.burger {
+  display: none;
+}
+
+/* пункты меню */
 .mainMenuLink {
   display: flex;
   align-items: center;
@@ -75,11 +88,16 @@ body {
   color: #0f1d3a;
   text-decoration: none;
   white-space: nowrap;
+  -webkit-tap-highlight-color: transparent;
   transition: all ease 0.2s;
 }
 
 .mainMenuLink:hover {
   color: #ec2a7c;
+}
+
+.mainMenuLink:focus {
+  outline: none;
 }
 
 .mainMenuLink::before {
@@ -130,6 +148,7 @@ body {
   background-image: url(../images/galochka2.svg);
 }
 
+/* выпадающий список «Путь джуна» */
 .dropdown {
   position: relative;
 }
@@ -181,10 +200,11 @@ body {
   transform: translateY(0);
 }
 
+/* заголовки первого экрана */
 .text1 {
   position: absolute;
-  top: 28.512rem;
-  left: 10.368rem;
+  top: 35rem;
+  left: 23rem;
   z-index: 2;
   font-family: 'Ermilov';
   font-weight: 700;
@@ -199,13 +219,13 @@ body {
 
 .text2 {
   position: absolute;
-  top: 41.5rem;
-  left: 48rem;
+  top: 45.5rem;
+  left: 54rem;
   letter-spacing: -0.346rem;
   z-index: 2;
   font-family: 'Ermilov';
   font-weight: 700;
-  font-size: 11.059rem;
+  font-size: 9.5rem;
   line-height: 1.05;
   color: #ffffff;
   text-transform: uppercase;
@@ -222,6 +242,7 @@ body {
   background-color: currentColor;
 }
 
+/* розовая секция с текстом */
 .section2 {
   width: 100vw;
   height: 35.078rem;
@@ -234,7 +255,7 @@ body {
   position: absolute;
   width: 100vw;
   height: 35.078rem;
-  background-image: url(../images/bgr2.svg);
+  background-image: url(../images/bgr2.webp);
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: right bottom;
@@ -264,6 +285,7 @@ body {
   color: #ffffff;
 }
 
+/* всё начинается с точки */
 .section3 {
   position: relative;
   width: 100vw;
@@ -308,19 +330,19 @@ body {
 .card1 {
   left: 6.1rem;
   width: 34.6rem;
-  background-image: url(../images/card1.svg);
+  background-image: url(../images/card1.webp);
 }
 
 .card2 {
   left: 53.2rem;
   width: 64.8rem;
-  background-image: url(../images/card2.svg);
+  background-image: url(../images/card2.webp);
 }
 
 .card3 {
   left: 131.401rem;
   width: 34.5rem;
-  background-image: url(../images/card3.svg);
+  background-image: url(../images/card3.webp);
 }
 
 .cardTitle {
@@ -345,19 +367,7 @@ body {
   color: #ffffff;
 }
 
-.cardTitleBig {
-  left: 3.499rem;
-  font-size: 3.499rem;
-  text-transform: uppercase;
-}
-
-.cardTextBig {
-  top: 53.699rem;
-  left: 3.499rem;
-  font-size: 2.4rem;
-  line-height: 2.9rem;
-}
-
+/* розовая полоса со стрелками */
 .row {
   position: absolute;
   width: 100vw;
@@ -405,6 +415,7 @@ body {
   left: 114.501rem;
 }
 
+/* вместо десятка каналов */
 .section4 {
   position: relative;
   width: 100vw;
@@ -440,9 +451,6 @@ body {
   position: absolute;
   width: 159.8rem;
   height: 65.999rem;
-  background-image: url(../images/cardsbgr.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   top: 25.099rem;
   left: 5.3rem;
 }
@@ -454,25 +462,66 @@ body {
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 72rem;
-  padding-top: 12.2rem;
+  width: 77.4rem;
+  height: 30.7rem;
+  padding: 11.8rem 0 0 3.4rem;
+  background-color: #ffffff;
+  border: 0.4rem solid #0f1d3a;
+  box-shadow: -0.8rem 0.8rem 0 #0f1d3a;
 }
 
 .channel1 {
   top: 0;
-  left: 4.6rem;
+  left: 0.8rem;
 }
 .channel2 {
   top: 0;
-  left: 85.8rem;
+  left: 82rem;
 }
 .channel3 {
   top: 34.5rem;
-  left: 4.6rem;
+  left: 0.8rem;
 }
 .channel4 {
   top: 34.5rem;
-  left: 85.8rem;
+  left: 82rem;
+}
+
+/* иконки и пиксельные номера в карточках */
+.channelIcon {
+  position: absolute;
+  top: 3.2rem;
+  left: 3.4rem;
+  width: 7.2rem;
+  height: 7.2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.channel1 .channelIcon {
+  background-image: url(../images/calendar.svg);
+}
+.channel2 .channelIcon {
+  background-image: url(../images/folder.svg);
+}
+.channel3 .channelIcon {
+  background-image: url(../images/chat.svg);
+}
+.channel4 .channelIcon {
+  background-image: url(../images/book.svg);
+}
+
+.channelNum {
+  position: absolute;
+  top: 2.5rem;
+  right: 1.66rem;
+  font-family: 'PixelifySan';
+  font-weight: 700;
+  font-size: 10.5rem;
+  line-height: 0.8;
+  color: #ffffff;
+  -webkit-text-stroke: 1.2rem #ec2a7c;
+  paint-order: stroke fill;
 }
 
 .channelTitle {
@@ -492,6 +541,7 @@ body {
   color: #0f1d3a;
 }
 
+/* теги */
 .tags {
   display: flex;
   gap: 0.8rem;
@@ -565,6 +615,7 @@ body {
   width: 8rem;
 }
 
+/* станьте частью */
 .section5 {
   position: relative;
   width: 100vw;
@@ -618,6 +669,7 @@ body {
   cursor: default;
 }
 
+/* подвал */
 .section6 {
   position: relative;
   width: 100vw;
@@ -658,6 +710,7 @@ body {
   text-align: center;
 }
 
+/* форма подписки */
 .formEmail {
   position: absolute;
   top: 33.699rem;
@@ -716,14 +769,24 @@ body {
   background-image: url(../images/btformhov.svg);
 }
 
+/* СТРАНИЦА ИНТЕРВЬЮ */
+.interviewPage {
+  background-color: #f3f3f5;
+  background-image: url(../images/pattern.svg);
+  background-repeat: repeat;
+  background-size: 64rem 64rem;
+}
+
+.interviewPage .section6 {
+  background-image: none;
+}
+
+/* первый экран */
 .interviewHero {
   position: relative;
   width: 100vw;
   height: 67.4rem;
   overflow: hidden;
-  background-image: url(../images/backgr5.svg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 .cover {
@@ -828,7 +891,7 @@ body {
 }
 
 .metaLabel {
-  font-family: 'Onest';
+  font-family: 'Ermilov';
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -846,6 +909,7 @@ body {
   color: #0f1d3a;
 }
 
+/* звёздочки */
 .bubble {
   position: absolute;
   z-index: 2;
@@ -890,6 +954,7 @@ body {
   background-image: url(../images/Object5.svg);
 }
 
+/* интервью и меню вопросов */
 .interview {
   display: flex;
   align-items: flex-start;
@@ -897,9 +962,6 @@ body {
   position: relative;
   width: 100vw;
   padding: 8.8rem 14.4rem 12rem;
-  background-image: url(../images/backgr6.svg);
-  background-repeat: repeat-y;
-  background-size: 100% auto;
 }
 
 .questionsMenu {
@@ -934,6 +996,10 @@ body {
   line-height: 1;
   color: #4a5370;
   text-transform: uppercase;
+}
+
+.navToggle {
+  display: none;
 }
 
 .questionsList {
@@ -972,6 +1038,7 @@ body {
   color: #ec2a7c;
 }
 
+/* вопросы и ответы */
 .answers {
   width: 109.6rem;
 }
@@ -1016,7 +1083,7 @@ body {
 .qaAnswer {
   max-width: 83rem;
   font-family: 'Onest';
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2rem;
   line-height: 3.1rem;
   color: #0f1d3a;
@@ -1034,7 +1101,7 @@ body {
   background-color: #bdf735;
   border: 0.3rem solid #0f1d3a;
   font-family: 'Onest';
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.8rem;
   line-height: 2.7rem;
   color: #0f1d3a;
@@ -1044,13 +1111,15 @@ body {
   font-weight: 700;
 }
 
+.qaToggle {
+  display: none;
+}
+
+/* ещё статьи */
 .moreArticles {
   position: relative;
   width: 100vw;
   height: 76.4rem;
-  background-image: url(../images/backgr6.svg);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
 }
 
 .toTop {
@@ -1106,32 +1175,55 @@ body {
 .article {
   position: absolute;
   top: 35.2rem;
-  width: 46.9rem;
-  height: 30.7rem;
+  width: 46.1rem;
+  height: 29.9rem;
+  background-color: #ffffff;
+  border: 0.4rem solid #0f1d3a;
+  box-shadow: -0.8rem 0.8rem 0 #0f1d3a;
+}
+
+/* цветной верх карточки с пиксельной иконкой */
+.article::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 17rem;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-position: center;
+  background-size: 7.2rem auto;
 }
 
 .article1 {
-  left: 13.6rem;
-  background-image: url(../images/cards1.1.svg);
+  left: 14.4rem;
+}
+.article1::before {
+  background-color: #bdf735;
+  background-image: url(../images/chat2.svg);
 }
 .article2 {
-  left: 62.5rem;
-  background-image: url(../images/cards1.2.svg);
+  left: 63.3rem;
+}
+.article2::before {
+  background-color: #ec2a7c;
+  background-image: url(../images/rocket.svg);
 }
 .article3 {
-  left: 111.4rem;
-  height: 30.8rem;
-  background-image: url(../images/cards1.3.svg);
+  left: 112.2rem;
+  height: 30rem;
+}
+.article3::before {
+  background-color: #0f1d3a;
+  background-image: url(../images/team.svg);
 }
 
 .articleTags {
   display: flex;
   gap: 0.8rem;
   position: absolute;
-  top: 19.8rem;
-  left: 3.6rem;
+  top: 19.4rem;
+  left: 2.4rem;
   height: 3.6rem;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1189,12 +1281,457 @@ body {
 
 .articleSoon {
   position: absolute;
-  top: 24.6rem;
-  left: 3.6rem;
+  top: 24.2rem;
+  left: 2.4rem;
   font-family: 'Ermilov';
   font-weight: 700;
   font-size: 2.1rem;
   line-height: 1;
   color: #0f1d3a;
   text-transform: uppercase;
+}
+
+/* СТРАНИЦА О ПРОЕКТЕ */
+.aboutPage {
+  background-color: #f3f3f5;
+  background-image: url(../images/pattern.svg);
+  background-repeat: repeat;
+  background-size: 64rem 64rem;
+}
+
+/* первый экран */
+.aboutHero {
+  position: relative;
+  width: 100vw;
+  height: 61.6rem;
+  background-image: url(../images/abouthero.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 51.4rem;
+}
+
+.aboutHeroTitle {
+  position: absolute;
+  top: 36.5rem;
+  left: -0.85rem;
+  width: 100vw;
+  font-family: 'Ermilov';
+  font-weight: 700;
+  font-size: 11.7rem;
+  line-height: 1;
+  color: #0f1d3a;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.aboutHeroLogo {
+  display: none;
+}
+
+/* основное о проекте */
+.about {
+  width: 100vw;
+  padding: 0 14.4rem 12.9rem;
+}
+
+.aboutTitle {
+  font-family: 'Ermilov';
+  font-weight: 700;
+  font-size: 7rem;
+  line-height: 1;
+  color: #0f1d3a;
+  text-transform: uppercase;
+}
+
+.aboutIntro {
+  margin-top: 3.4rem;
+  font-family: 'Onest';
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  color: #0f1d3a;
+}
+
+.aboutBlock {
+  position: relative;
+  margin-top: 10.5rem;
+}
+
+.aboutWhy {
+  margin-top: 10.2rem;
+}
+
+.aboutHeading {
+  display: flex;
+  align-items: center;
+  gap: 2.7rem;
+  font-family: 'Ermilov';
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1;
+  color: #0f1d3a;
+  text-transform: uppercase;
+}
+
+.aboutNum {
+  font-family: 'PixelifySan';
+  font-weight: 700;
+  font-size: 5.1rem;
+  line-height: 1;
+  color: #ffffff;
+  -webkit-text-stroke: 0.6rem #ec2a7c;
+  paint-order: stroke fill;
+}
+
+/* зачем мы это делаем */
+.whyText {
+  margin-top: 3.1rem;
+  font-family: 'Onest';
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 3.2rem;
+  color: #0f1d3a;
+}
+
+.whyText p + p {
+  margin-top: 1.6rem;
+}
+
+.mission {
+  position: absolute;
+  top: 7.8rem;
+  left: 88rem;
+  width: 52rem;
+  height: 31rem;
+  padding: 3rem 3rem 0 4.6rem;
+  background-image: url(../images/missia.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #0f1d3a;
+}
+
+.missionTitle {
+  font-family: 'Ermilov';
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.missionText {
+  margin-top: 2.2rem;
+  font-family: 'Onest';
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 2.95rem;
+}
+
+/* звёздочки у миссии */
+.stars {
+  position: absolute;
+  top: 1rem;
+  left: 133rem;
+  width: 17.1rem;
+  height: 15.3rem;
+  background-image: url(../images/stars.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+}
+
+/* страшные столкновения */
+.problems {
+  display: flex;
+  gap: 2.9rem;
+  margin-top: 3.2rem;
+}
+
+.problem {
+  width: 46.1rem;
+  height: 27.3rem;
+  padding: 2.9rem 2.6rem 0;
+  background-color: #ffffff;
+  border: 0.3rem solid #0f1d3a;
+  box-shadow: -0.8rem 0.8rem 0 #0f1d3a;
+  color: #0f1d3a;
+  transition: all ease 0.3s;
+}
+
+.problemNum {
+  font-family: 'PixelifySan';
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  color: #ec2a7c;
+  transition: all ease 0.3s;
+}
+
+.problemTitle {
+  margin-top: 0.8rem;
+  font-family: 'Ermilov';
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 3.5rem;
+  text-transform: uppercase;
+}
+
+.problemText {
+  margin-top: 0.8rem;
+  font-family: 'Onest';
+  font-weight: 400;
+  font-size: 2.1rem;
+  line-height: 3.4rem;
+}
+
+.problem1:hover {
+  background-color: #ec2a7c;
+  color: #ffffff;
+}
+
+.problem1:hover .problemNum {
+  color: #ffffff;
+}
+
+.problem2:hover {
+  background-color: #c3fb52;
+}
+
+.problem3:hover {
+  background-color: #ffe94a;
+}
+
+/* для кого проект */
+.audience {
+  display: flex;
+  gap: 2.4rem;
+  margin-top: 3.2rem;
+}
+
+.forYou,
+.youGet {
+  width: 70.8rem;
+  height: 27.8rem;
+  padding: 3.4rem 3.2rem 0;
+  color: #0f1d3a;
+}
+
+.forYou {
+  background-color: #bdf735;
+  border: 0.4rem solid #0f1d3a;
+  box-shadow: -0.8rem 0.8rem 0 #0f1d3a;
+}
+
+.youGet {
+  background-color: #ffffff;
+  border: 0.4rem solid #ec2a7c;
+  box-shadow: -0.8rem 0.8rem 0 #ec2a7c;
+}
+
+.audienceTitle {
+  font-family: 'Ermilov';
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.checkList {
+  margin-top: 0.5rem;
+  list-style: none;
+}
+
+.checkList li {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-family: 'Onest';
+  font-weight: 500;
+  font-size: 2.1rem;
+  line-height: 4.6rem;
+}
+
+.checkList li::before {
+  content: '';
+  flex-shrink: 0;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* что мы делаем */
+.doList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  margin-top: 3.2rem;
+}
+
+.doItem {
+  position: relative;
+  background-color: #ec2a7c;
+  border: 0.3rem solid #0f1d3a;
+  box-shadow: 0 0.6rem 0 #0f1d3a;
+  transition: background-color ease 0.4s;
+}
+
+.doTitle {
+  display: block;
+  width: 100%;
+  height: 7.2rem;
+  padding: 0 2.7rem;
+  border: none;
+  background-color: transparent;
+  font-family: 'Ermilov';
+  font-weight: 700;
+  font-size: 2.6rem;
+  color: #ffffff;
+  text-align: left;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+
+.doBody {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows ease 0.4s;
+}
+
+.doText {
+  overflow: hidden;
+  padding: 0 2.7rem;
+  font-family: 'Onest';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #0f1d3a;
+}
+
+.doText::after {
+  content: '';
+  display: block;
+  height: 1.6rem;
+}
+
+.doItem.open {
+  background-color: #ffffff;
+}
+
+.doItem.open .doTitle {
+  height: 6.3rem;
+  color: #0f1d3a;
+}
+
+.doItem.open .doBody {
+  grid-template-rows: 1fr;
+}
+
+.doItem.open::after {
+  content: '';
+  position: absolute;
+  top: 2.4rem;
+  right: 2.3rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-image: url(../images/cross.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
+  animation: fadeIn 0.4s ease;
+}
+
+/* знай их в лицо */
+.team {
+  display: flex;
+  gap: 2.25rem;
+  margin: 3.4rem 0 0 -0.6rem;
+}
+
+.member {
+  position: relative;
+  width: 46.7rem;
+  height: 43.4rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.member1 {
+  background-image: url(../images/people1.svg);
+}
+.member2 {
+  background-image: url(../images/people2.svg);
+}
+.member3 {
+  background-image: url(../images/people3.svg);
+}
+
+.memberRole {
+  position: absolute;
+  top: 32.6rem;
+  left: 3.4rem;
+  font-family: 'Ermilov';
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1;
+  color: #0f1d3a;
+  text-transform: uppercase;
+}
+
+.memberName {
+  position: absolute;
+  top: 36.7rem;
+  left: 3.4rem;
+  font-family: 'Onest';
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #4a5370;
+}
+
+/* человечки выезжают снизу при наведении */
+.memberFigureBox {
+  position: absolute;
+  top: -10rem;
+  right: -10rem;
+  bottom: 0.6rem;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.memberFigure {
+  position: absolute;
+  bottom: 0.2rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transform: translateY(110%);
+  transition: transform ease 0.8s;
+}
+
+.member:hover .memberFigure {
+  transform: translateY(0);
+}
+
+.member1 .memberFigure {
+  left: 25.1rem;
+  width: 28.6rem;
+  height: 28.1rem;
+  background-image: url(../images/diana.svg);
+}
+.member2 .memberFigure {
+  left: 26.6rem;
+  width: 23rem;
+  height: 29.5rem;
+  background-image: url(../images/nino.svg);
+}
+.member3 .memberFigure {
+  left: 28rem;
+  width: 24.3rem;
+  height: 29rem;
+  background-image: url(../images/svetka.svg);
+}
+
+.aboutPage .section6 {
+  background-image: none;
 }
