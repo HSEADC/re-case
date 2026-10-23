@@ -1,3 +1,4 @@
+/* курсор */
 .cursor {
   animation: blink 0.8s steps(1) infinite;
 }
@@ -12,6 +13,7 @@
   }
 }
 
+/* компьютер в шапке  */
 .computer {
   animation: levitate 4s ease-in-out infinite;
 }
@@ -26,6 +28,7 @@
   }
 }
 
+/* звёздочки в шапке */
 .bubble {
   opacity: 0;
   animation: bubbleUp 8s ease-in infinite;
@@ -100,6 +103,7 @@
   }
 }
 
+/* розовые звёздочки */
 .stars {
   animation: levitate 4s ease-in-out infinite;
 }
