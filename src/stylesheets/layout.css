@@ -416,14 +416,14 @@ body {
 .section4 {
   position: relative;
   width: 100vw;
-  height: 99.6rem;
+  height: 112.4rem;
   z-index: 1;
 }
 
 .wallpaper4 {
   position: absolute;
   width: 100vw;
-  height: 99.6rem;
+  height: 112.4rem;
   background-image: url(../images/bgr4.svg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -447,7 +447,7 @@ body {
 .channels {
   position: absolute;
   width: 159.8rem;
-  height: 66rem;
+  height: 78.8rem;
   top: 25.1rem;
   left: 5.3rem;
 }
@@ -460,8 +460,8 @@ body {
   flex-direction: column;
   position: absolute;
   width: 77.4rem;
-  height: 30.7rem;
-  padding: 11.8rem 0 0 3.4rem;
+  height: 37.1rem;
+  padding: 13.1rem 0 0 3.4rem;
   background-color: #ffffff;
   border: 0.4rem solid #0f1d3a;
   box-shadow: -0.8rem 0.8rem 0 #0f1d3a;
@@ -476,11 +476,11 @@ body {
   left: 82rem;
 }
 .channel3 {
-  top: 34.5rem;
+  top: 40.9rem;
   left: 0.8rem;
 }
 .channel4 {
-  top: 34.5rem;
+  top: 40.9rem;
   left: 82rem;
 }
 
@@ -529,38 +529,41 @@ body {
 }
 
 .channelText {
-  margin-top: 1.6rem;
+  max-width: 66rem;
+  margin-top: 1.8rem;
   font-family: 'Onest';
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   line-height: 145%;
   color: #0f1d3a;
 }
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.8rem;
-  height: 3.6rem;
+  height: 4.3rem;
   margin-top: 1.3rem;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .tags1 {
-  width: 59.8rem;
-  background-image: url(../images/Chips1.svg);
+  width: 59rem;
+  height: 9.4rem;
+  background-image: url(../images/Chips11.svg);
 }
 .tags2 {
-  width: 42.5rem;
-  background-image: url(../images/Chips2.svg);
+  width: 58.5rem;
+  background-image: url(../images/Chips22.svg);
 }
 .tags3 {
-  width: 34.2rem;
-  background-image: url(../images/Chips3.svg);
+  width: 47.9rem;
+  background-image: url(../images/Chips33.svg);
 }
 .tags4 {
-  width: 8rem;
-  background-image: url(../images/Chips4.svg);
+  width: 10.5rem;
+  background-image: url(../images/Chips44.svg);
 }
 
 .tag {
@@ -568,46 +571,46 @@ body {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 3.6rem;
+  height: 4.3rem;
   font-family: 'Onest';
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: #0f1d3a;
   white-space: nowrap;
 }
 
 .tags1 .tag:nth-child(1) {
-  width: 13.3rem;
+  width: 18.5rem;
 }
 .tags1 .tag:nth-child(2) {
-  width: 17.2rem;
+  width: 24.3rem;
 }
 .tags1 .tag:nth-child(3) {
-  width: 10.8rem;
+  width: 14.6rem;
 }
 .tags1 .tag:nth-child(4) {
-  width: 16.1rem;
+  width: 22.6rem;
 }
 
 .tags2 .tag:nth-child(1) {
-  width: 9.4rem;
+  width: 12.6rem;
 }
 .tags2 .tag:nth-child(2) {
-  width: 14.3rem;
+  width: 20rem;
 }
 .tags2 .tag:nth-child(3) {
-  width: 17.2rem;
+  width: 24.3rem;
 }
 
 .tags3 .tag:nth-child(1) {
-  width: 12.7rem;
+  width: 17.5rem;
 }
 .tags3 .tag:nth-child(2) {
-  width: 20.7rem;
+  width: 29.6rem;
 }
 
 .tags4 .tag {
-  width: 8rem;
+  width: 10.5rem;
 }
 
 /* станьте частью */
@@ -985,9 +988,9 @@ body {
   margin: 2.2rem 0 2rem 0.3rem;
   font-family: 'Ermilov';
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   line-height: 1;
-  color: #4a5370;
+  color: #0f1d3a;
   text-transform: uppercase;
 }
 
@@ -1374,7 +1377,7 @@ body {
   font-size: 5.1rem;
   line-height: 1;
   color: #ffffff;
-  -webkit-text-stroke: 0.6rem #ec2a7c;
+  -webkit-text-stroke: 1.2rem #ec2a7c;
   paint-order: stroke fill;
 }
 
@@ -1620,6 +1623,19 @@ body {
 
 .doItem.open .doBody {
   grid-template-rows: 1fr;
+}
+
+.doItem::after {
+  content: '';
+  position: absolute;
+  top: 2.9rem;
+  right: 2.3rem;
+  width: 3.1rem;
+  height: 1.4rem;
+  background-image: url(../images/galkoo.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  pointer-events: none;
 }
 
 .doItem.open::after {
