@@ -1,6 +1,5 @@
-/* МОБИЛЬНАЯ ВЕРСИЯ (до 767px) */
+/* МОБИЛЬНАЯ ВЕРСИЯ*/
 @media (max-width: 767px) {
-  /* 1rem = 10px макета шириной 390px */
   html {
     font-size: calc(100vw / 39);
   }
@@ -377,7 +376,7 @@
     display: none;
   }
 
-  /* теги: рамки — картинки Chipsmob, переносятся на две строки */
+  /* теги */
   .tags {
     flex-wrap: wrap;
     gap: 0.8rem;
@@ -1201,17 +1200,17 @@
   }
 
   .member1 .memberFigure {
-    left: 22.5rem;
+    left: 21rem;
     width: 19.7rem;
     height: 19.4rem;
   }
   .member2 .memberFigure {
-    left: 23.2rem;
+    left: 22rem;
     width: 16.3rem;
     height: 20.9rem;
   }
   .member3 .memberFigure {
-    left: 23.6rem;
+    left: 23rem;
     width: 17.3rem;
     height: 20.6rem;
   }
@@ -1219,7 +1218,6 @@
 
 /* ПЛАНШЕТ (768–1199px) */
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* 1rem = 10px макета шириной 768px */
   html {
     font-size: calc(100vw / 76.8);
   }
@@ -1577,7 +1575,7 @@
     display: none;
   }
 
-  /* теги: рамки — картинки Chipspad в две строки */
+  /* теги */
   .tags {
     flex-wrap: wrap;
     gap: 0.8rem;
