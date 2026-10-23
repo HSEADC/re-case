@@ -805,7 +805,7 @@
   .qaQuestion {
     margin-top: 0.8rem;
     padding: 1.5rem 1.2rem 1.5rem 1.6rem;
-    box-shadow: 0 0.55rem 0 #0f1d3a;
+    box-shadow: 6 0.55rem 0 #0f1d3a;
     font-size: 1.5rem;
     line-height: 2.2rem;
   }
@@ -939,5 +939,1420 @@
     top: 19.4rem;
     left: 1.65rem;
     font-size: 1.7rem;
+  }
+
+  /* СТРАНИЦА О ПРОЕКТЕ */
+  .aboutPage {
+    overflow-x: hidden;
+    background-size: 32rem 32rem;
+  }
+
+  /* первый экран */
+  .aboutHero {
+    height: 31.6rem;
+    background-size: 86.4rem auto;
+    background-position: -22.8rem 0;
+  }
+
+  .aboutHeroTitle {
+    top: 18.8rem;
+    left: 0;
+    padding-left: 1rem;
+    font-size: 5.84rem;
+  }
+
+  /* основное о проекте */
+  .about {
+    padding: 0 1.6rem 4.9rem;
+  }
+
+  .aboutTitle {
+    font-size: 3.6rem;
+    line-height: 3.2rem;
+  }
+
+  .aboutIntro {
+    margin-top: 1.6rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+  }
+
+  .aboutIntro br {
+    display: none;
+  }
+
+  .aboutBlock,
+  .aboutWhy {
+    margin-top: 5.6rem;
+  }
+
+  .aboutHeading {
+    gap: 1.6rem;
+    font-size: 2.4rem;
+    line-height: 2.2rem;
+  }
+
+  .aboutNum {
+    flex-shrink: 0;
+    font-size: 3.6rem;
+    -webkit-text-stroke: 0.6rem #ec2a7c;
+  }
+
+  /* зачем мы это делаем */
+  .whyText {
+    margin-top: 2.4rem;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+  }
+
+  .whyText br,
+  .missionText br,
+  .problemText br,
+  .problemTitle br {
+    display: none;
+  }
+
+  .mission {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 35.8rem;
+    height: 19.7rem;
+    margin-top: 4.4rem;
+    padding: 2.4rem 2.4rem 0 3.6rem;
+  }
+
+  .missionTitle {
+    font-size: 2rem;
+  }
+
+  .missionText {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .stars {
+    display: none;
+  }
+
+  /* страшные столкновения */
+  .problems {
+    flex-direction: column;
+    gap: 1.9rem;
+    margin-top: 2.4rem;
+  }
+
+  .problem {
+    width: 35.8rem;
+    height: auto;
+    padding: 2.1rem 2rem 2.6rem;
+    border-width: 0.3rem;
+  }
+
+  .problemNum {
+    font-size: 1.8rem;
+  }
+
+  .problemTitle {
+    margin-top: 0.8rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .problemText {
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  /* для кого проект */
+  .audience {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2.4rem;
+  }
+
+  .forYou,
+  .youGet {
+    width: 35.8rem;
+    height: auto;
+    padding: 2.4rem 1.8rem 2rem;
+  }
+
+  .youGet {
+    margin-left: 0;
+  }
+
+  .audienceTitle {
+    font-size: 2rem;
+  }
+
+  .checkList {
+    margin-top: 0.8rem;
+  }
+
+  .checkList li {
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+
+  .checkList li + li {
+    margin-top: 0.8rem;
+  }
+
+  .checkList li::before {
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-top: 0.3rem;
+  }
+
+  /* что мы делаем */
+  .doList {
+    gap: 1.9rem;
+    margin-top: 2.4rem;
+  }
+
+  .doTitle {
+    height: 4.5rem;
+    padding: 0 1.8rem;
+    font-size: 1.9rem;
+  }
+
+  .doItem.open .doTitle {
+    height: 4.4rem;
+    padding-top: 1rem;
+    padding-right: 5rem;
+  }
+
+  .doText::after {
+    height: 2.2rem;
+  }
+
+  .doText {
+    padding: 0 1.8rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .doItem.open::after {
+    top: 1.6rem;
+    right: 1.6rem;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  /* знай их в лицо */
+  .team {
+    flex-direction: column;
+    gap: 1.4rem;
+    margin: 2.4rem 0 0 -0.6rem;
+  }
+
+  .member {
+    width: 36.4rem;
+  }
+
+  .member1 {
+    height: 36.9rem;
+    background-image: url(../images/pemob1.svg);
+  }
+  .member2 {
+    height: 35.1rem;
+    background-image: url(../images/pemob2.svg);
+  }
+  .member3 {
+    height: 35.1rem;
+    background-image: url(../images/pemob3.svg);
+  }
+
+  .memberRole {
+    top: auto;
+    bottom: 5rem;
+    left: 2.6rem;
+    width: 16rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+
+  .memberName {
+    top: auto;
+    bottom: 2.6rem;
+    left: 2.6rem;
+    font-size: 1.3rem;
+  }
+
+  .memberFigureBox {
+    right: -1.6rem;
+  }
+
+  /* на телефоне человечки выезжают при прокрутке */
+  .member.show .memberFigure {
+    transform: translateY(0);
+  }
+
+  .member1 .memberFigure {
+    left: 22.5rem;
+    width: 19.7rem;
+    height: 19.4rem;
+  }
+  .member2 .memberFigure {
+    left: 23.2rem;
+    width: 16.3rem;
+    height: 20.9rem;
+  }
+  .member3 .memberFigure {
+    left: 23.6rem;
+    width: 17.3rem;
+    height: 20.6rem;
+  }
+}
+
+/* ПЛАНШЕТ (768–1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* 1rem = 10px макета шириной 768px */
+  html {
+    font-size: calc(100vw / 76.8);
+  }
+
+  /* первый экран */
+  .sec1 {
+    height: 58.7rem;
+  }
+
+  .hero-bg {
+    height: 58.7rem;
+    background-size: cover;
+  }
+
+  .decor {
+    top: 8.6rem;
+    left: 0;
+    width: 76.8rem;
+    height: 50.1rem;
+    background-image: url(../images/Herobgr.svg);
+  }
+
+  :is(.sec1, .header) .logo {
+    top: 2.4rem;
+    left: 3rem;
+    width: 17.6rem;
+    height: 3.75rem;
+  }
+
+  /* бургер */
+  :is(.sec1, .header) .burger {
+    display: block;
+    position: absolute;
+    top: 2.6rem;
+    right: 3.2rem;
+    z-index: 6;
+    width: 4.4rem;
+    height: 3.3rem;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/burger.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+  }
+
+  .menuOpen :is(.sec1, .header) .burger {
+    top: 2.5rem;
+    width: 3.6rem;
+    height: 3.5rem;
+    background-image: url(../images/close.svg);
+  }
+
+  .menuOpen {
+    overflow: hidden;
+  }
+
+  /* меню: салатовая панель под шапкой */
+  :is(.sec1, .header) .mainMenu {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.4rem;
+    padding-top: 18rem;
+    position: fixed;
+    top: 8.5rem;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 50rem;
+    background-image: url(../images/menubgrpad.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: none;
+  }
+
+  .menuOpen :is(.sec1, .header) .mainMenu {
+    display: flex;
+  }
+
+  .menuOpen::before {
+    content: '';
+    position: fixed;
+    top: 8.5rem;
+    left: 0;
+    z-index: 4;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  :is(.sec1, .header) .mainMenuLink {
+    gap: 0.8rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+  }
+
+  :is(.sec1, .header) .mainMenuLink::before {
+    display: none;
+  }
+
+  :is(.sec1, .header) .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  :is(.sec1, .header) .dropdownToggle::after {
+    width: 2.6rem;
+    height: 1.5rem;
+    transform: rotate(0deg);
+  }
+
+  :is(.sec1, .header) .dropdown.open .dropdownToggle::after {
+    transform: rotate(180deg);
+  }
+
+  :is(.sec1, .header) .dropdownMenu {
+    position: static;
+    display: none;
+    padding-top: 2.4rem;
+  }
+
+  :is(.sec1, .header) .dropdown.open .dropdownMenu {
+    display: block;
+  }
+
+  /* заголовки первого экрана */
+  .text1 {
+    top: 22rem;
+    left: 8rem;
+    font-size: 3.5rem;
+  }
+
+  .text2 {
+    top: 30.5rem;
+    left: 15rem;
+    font-size: 7.7rem;
+    letter-spacing: -0.27rem;
+  }
+
+  /* розовая секция с текстом */
+  .section2 {
+    height: 21.3rem;
+    background-color: #e22270;
+    background-image: url(../images/bgrpad.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .shapes {
+    display: none;
+  }
+
+  .text3,
+  .text4 {
+    left: 3.3rem;
+    font-size: 2rem;
+    line-height: 2.15rem;
+  }
+
+  .text3 {
+    top: 4.2rem;
+    width: 40rem;
+  }
+
+  .text3 br {
+    display: none;
+  }
+
+  .text4 {
+    top: 12.6rem;
+  }
+
+  /* всё начинается с точки */
+  .section3 {
+    height: 54rem;
+  }
+
+  .wallpaper3 {
+    height: 54rem;
+    background-size: cover;
+  }
+
+  .title3 {
+    top: 4rem;
+    left: 4.8rem;
+    font-size: 3.8rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.1rem;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    top: 13.3rem;
+    width: 19.6rem;
+    height: 38.7rem;
+  }
+
+  .card1 {
+    left: 2.6rem;
+  }
+
+  .card2 {
+    left: 28.4rem;
+    background-image: url(../images/cardpad.webp);
+  }
+
+  .card3 {
+    left: 54.2rem;
+  }
+
+  .cardTitle {
+    top: 27.6rem;
+    left: 1.8rem;
+    font-size: 1.7rem;
+  }
+
+  .cardText {
+    top: 30.3rem;
+    left: 1.8rem;
+    width: 17rem;
+    font-size: 1.28rem;
+    line-height: 1.7rem;
+  }
+
+  .cardTextBig br {
+    display: none;
+  }
+
+  .section3 .hideMobile {
+    display: none;
+  }
+
+  /* розовая полоса со стрелками */
+  .row {
+    top: 52.4rem;
+    height: 16.5rem;
+    background-image: url(../images/Stripepad.svg);
+  }
+
+  .step1,
+  .step2,
+  .step3,
+  .step4,
+  .step5,
+  .step6 {
+    top: 5.4rem;
+    font-size: 1.3rem;
+    letter-spacing: 0.13rem;
+  }
+
+  .step1 {
+    left: 12rem;
+  }
+  .step2 {
+    left: 20.7rem;
+  }
+  .step3 {
+    left: 31rem;
+  }
+  .step4 {
+    left: 45.7rem;
+  }
+  .step5 {
+    left: 58.9rem;
+  }
+  .step6 {
+    top: 7.7rem;
+    left: 24.1rem;
+  }
+
+  /* вместо десятка каналов */
+  .section4 {
+    height: 92.2rem;
+  }
+
+  .wallpaper4 {
+    height: 92.2rem;
+    background-size: cover;
+  }
+
+  .title4 {
+    top: 13.6rem;
+    left: 3.5rem;
+    font-size: 3.4rem;
+    letter-spacing: -0.1rem;
+  }
+
+  .channels {
+    display: grid;
+    grid-template-columns: 34.4rem 34.4rem;
+    grid-template-rows: 33.5rem 32.8rem;
+    gap: 1.8rem 1.6rem;
+    top: 19.2rem;
+    left: 3.2rem;
+    width: 70.4rem;
+    height: auto;
+  }
+
+  .channel1,
+  .channel2,
+  .channel3,
+  .channel4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 34.4rem;
+    height: 100%;
+    padding: 8.4rem 1.9rem 0;
+  }
+
+  .channelIcon {
+    top: 1.9rem;
+    left: 1.8rem;
+    width: 4.9rem;
+    height: 4.9rem;
+  }
+
+  .channelNum {
+    top: 1rem;
+    right: 1rem;
+    font-size: 5.2rem;
+    -webkit-text-stroke: 1.2rem #ec2a7c;
+  }
+
+  .channelTitle {
+    max-width: 26rem;
+    font-size: 2.3rem;
+    line-height: 2.2rem;
+  }
+
+  .channelText {
+    margin-top: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  .channelText br {
+    display: none;
+  }
+
+  /* теги: рамки — картинки Chipspad в две строки */
+  .tags {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    height: auto;
+    margin-top: 2.6rem;
+  }
+
+  .tag {
+    height: 3.5rem;
+    font-size: 1.3rem;
+  }
+
+  .channel3 .tags {
+    margin-top: 0.9rem;
+  }
+
+  .tags1 {
+    width: 29.6rem;
+    height: 7.8rem;
+    background-image: url(../images/Chipspad2.svg);
+  }
+  .tags2 {
+    width: 23.3rem;
+    height: 7.8rem;
+    background-image: url(../images/Chipspad1.svg);
+  }
+  .tags3 {
+    width: 19.5rem;
+    height: 7.8rem;
+    background-image: url(../images/Chipspad3.svg);
+  }
+  .tags4 {
+    width: 7.7rem;
+    height: 3.5rem;
+    background-image: url(../images/Chipspad4.svg);
+  }
+
+  .tags1 .tag:nth-child(1) {
+    width: 12.6rem;
+  }
+  .tags1 .tag:nth-child(2) {
+    width: 16.2rem;
+  }
+  .tags1 .tag:nth-child(3) {
+    width: 10.2rem;
+  }
+  .tags1 .tag:nth-child(4) {
+    width: 15.2rem;
+  }
+
+  .tags2 .tag:nth-child(1) {
+    width: 9rem;
+  }
+  .tags2 .tag:nth-child(2) {
+    width: 13.5rem;
+  }
+  .tags2 .tag:nth-child(3) {
+    width: 16.2rem;
+  }
+
+  .tags3 .tag:nth-child(1) {
+    width: 12rem;
+  }
+  .tags3 .tag:nth-child(2) {
+    width: 19.5rem;
+  }
+
+  .tags4 .tag {
+    width: 7.7rem;
+  }
+
+  /* станьте частью */
+  .section5 {
+    height: 24.6rem;
+    background-image: none;
+    background-color: #bdf735;
+  }
+
+  .section5 .title5 {
+    top: 4.1rem;
+    left: 0;
+    width: 100vw;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .section5 .text5 {
+    top: 8.5rem;
+    left: 0;
+    width: 100vw;
+    font-size: 1.7rem;
+    line-height: 1.9rem;
+    text-align: center;
+  }
+
+  .section5 .button5 {
+    top: 15.3rem;
+    left: 10.4rem;
+    width: 56.2rem;
+    height: 5.4rem;
+    padding-top: 0;
+    background-image: url(../images/butpad.svg);
+    font-size: 1.8rem;
+  }
+
+  /* подвал */
+  .section6 {
+    height: 42.8rem;
+  }
+
+  .section6 .title6 {
+    top: 5rem;
+    left: 18.4rem;
+    width: 40rem;
+    font-size: 3.6rem;
+    line-height: 4rem;
+  }
+
+  .section6 .title6 br {
+    display: none;
+  }
+
+  .section6 .text6 {
+    top: 19.4rem;
+    font-size: 1.8rem;
+  }
+
+  /* форма подписки */
+  .section6 .formEmail {
+    top: 23.1rem;
+    left: 12.4rem;
+    width: 52rem;
+    height: 5.9rem;
+    background-position: 1.851rem center;
+  }
+
+  .section6 .formButton {
+    top: 30rem;
+    left: 27rem;
+    width: 25.7rem;
+    height: 10.5rem;
+    padding: 1.4rem 4rem 2.5rem 1.2rem;
+    font-size: 1.6rem;
+  }
+
+  /* СТРАНИЦА ИНТЕРВЬЮ */
+  .interviewPage {
+    background-size: 64rem 64rem;
+  }
+
+  /* первый экран */
+  .interviewPage .header {
+    height: 9rem;
+  }
+
+  .interviewHero {
+    height: 54.9rem;
+  }
+
+  .cover {
+    top: 9rem;
+    left: 3.2rem;
+    width: 70.4rem;
+    height: 45.9rem;
+    background-image: none;
+    background-color: #ec2a7c;
+  }
+
+  .computer {
+    top: 0;
+    left: 22.7rem;
+    width: 74rem;
+    height: 55.3rem;
+  }
+
+  .breadcrumbs {
+    top: 13.4rem;
+    left: 6.6rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .heroTags {
+    top: 17rem;
+    left: 6.4rem;
+    transform: scale(0.96);
+    transform-origin: left top;
+  }
+
+  .interviewTitle {
+    top: 22.4rem;
+    left: 6.6rem;
+    width: 42rem;
+    font-size: 3.4rem;
+    line-height: 3.8rem;
+    white-space: normal;
+  }
+
+  .meta {
+    grid-template-columns: 19.2rem 16rem;
+    row-gap: 1rem;
+    top: 32.2rem;
+    left: 5.6rem;
+    width: 40rem;
+    height: 20rem;
+    padding: 1.9rem 0 0 2.7rem;
+    background-image: url(../images/ramochkatab.svg);
+  }
+
+  .metaItem {
+    padding-right: 2rem;
+  }
+
+  .metaLabel {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.04rem;
+  }
+
+  .metaText {
+    margin-top: 0.3rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+
+  /* звёздочки */
+  .bubble1 {
+    top: 12.6rem;
+    left: 41.2rem;
+    width: 3.4rem;
+    height: 4.1rem;
+  }
+  .bubble2 {
+    top: 18rem;
+    left: 43.6rem;
+    width: 2.4rem;
+    height: 2.5rem;
+  }
+  .bubble3 {
+    top: 16rem;
+    left: 45rem;
+    width: 3.4rem;
+    height: 2.9rem;
+  }
+  .bubble4 {
+    top: 26rem;
+    left: 44rem;
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+  .bubble5 {
+    top: 19rem;
+    left: 42rem;
+    width: 2rem;
+    height: 2.5rem;
+  }
+
+  /* навигация */
+  .interview {
+    display: block;
+    padding: 4.1rem 3.2rem 0;
+  }
+
+  .questionsMenu {
+    position: static;
+    width: 70.4rem;
+    height: auto;
+    padding: 0;
+    overflow: visible;
+    background-color: #bdf735;
+  }
+
+  .questionsMenu.open {
+    background-color: #ffffff;
+  }
+
+  .questionsTitle {
+    display: none;
+  }
+
+  .navToggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5.2rem;
+    padding: 0 1.3rem 0 1.8rem;
+    border: none;
+    background-color: transparent;
+    font-family: 'Ermilov';
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #0f1d3a;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .navToggle::after {
+    content: '';
+    width: 3.8rem;
+    height: 2.3rem;
+    background-image: url(../images/galk.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all ease 0.2s;
+  }
+
+  .questionsMenu.open .navToggle::after {
+    transform: rotate(180deg);
+  }
+
+  .questionsList {
+    display: none;
+    padding: 0.4rem 1.8rem 2rem;
+  }
+
+  .questionsMenu.open .questionsList {
+    display: flex;
+  }
+
+  .questionLink {
+    grid-template-columns: 3.4rem 1fr;
+    padding: 1rem 1.4rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .questionLink.active {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  .questionLink br {
+    display: none;
+  }
+
+  /* вопросы и ответы */
+  .answers {
+    width: auto;
+    margin-top: 4.1rem;
+  }
+
+  .qa {
+    display: block;
+    margin-bottom: 4.5rem;
+    scroll-margin-top: 2rem;
+  }
+
+  .qa:last-child {
+    margin-bottom: 0;
+  }
+
+  .qaLabel {
+    padding-top: 0;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .qaQuestion {
+    margin-top: 0.8rem;
+    padding: 1.4rem 1.6rem;
+    box-shadow: -0.6rem 0.6rem 0 #0f1d3a;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+  }
+
+  .qa .qaLabel:nth-of-type(3),
+  .qaAnswer,
+  .qaResult {
+    display: none;
+  }
+
+  .qa.open .qaLabel:nth-of-type(3) {
+    display: block;
+    margin-top: 2.8rem;
+  }
+
+  .qa.open .qaAnswer,
+  .qa.open .qaResult {
+    display: block;
+  }
+
+  .qaAnswer {
+    max-width: none;
+    margin-top: 1.2rem;
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+  }
+
+  .qaAnswer p + p {
+    margin-top: 2.6rem;
+  }
+
+  .qaResult {
+    min-height: 0;
+    margin-top: 2.6rem;
+    padding: 2rem 2.4rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  /* кнопка открыть / закрыть */
+  .qaToggle {
+    display: block;
+    width: 35.8rem;
+    height: 5.1rem;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/btmob.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-family: 'Ermilov';
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease 0.2s;
+  }
+
+  .qa.open .qaToggle {
+    background-image: url(../images/btmob2.svg);
+    color: #ec2a7c;
+  }
+
+  @media (hover: hover) {
+    .qaToggle:hover {
+      background-image: url(../images/btmob2.svg);
+      color: #ec2a7c;
+    }
+
+    .qa.open .qaToggle:hover {
+      background-image: url(../images/btmobhover2.svg);
+      color: #ffffff;
+    }
+  }
+
+  /* ещё статьи */
+  .moreArticles {
+    display: flex;
+    gap: 1.6rem;
+    height: auto;
+    padding: 30.6rem 0 1.3rem 3.2rem;
+  }
+
+  .toTop {
+    top: 3.8rem;
+    height: 17.3rem;
+    padding: 0 0 0.6rem;
+    background-image: url(../images/Striptab.svg);
+    font-size: 1.7rem;
+  }
+
+  .moreLabel {
+    top: 22.4rem;
+    left: 3.2rem;
+    font-size: 1.3rem;
+  }
+
+  .moreTitle {
+    top: 25.4rem;
+    left: 3.2rem;
+    font-size: 2.2rem;
+  }
+
+  .article {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 22.4rem;
+    height: 30.2rem;
+  }
+
+  .article3 {
+    height: 30.2rem;
+  }
+
+  .article::before {
+    height: 12.9rem;
+    background-size: 6.4rem auto;
+  }
+
+  .articleTags {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    top: 14.5rem;
+    left: 1.6rem;
+    transform: scale(0.96);
+    transform-origin: left top;
+  }
+
+  .articleTags1 {
+    width: 18.1rem;
+    height: 8.2rem;
+    background-image: url(../images/tagstab1.svg);
+  }
+
+  .articleTags3 {
+    width: 10.3rem;
+    height: 8.2rem;
+    background-image: url(../images/tagstab3.svg);
+  }
+
+  .articleTags3 .articleTag:nth-child(2) {
+    width: 10.3rem;
+  }
+
+  .articleSoon {
+    top: 19.4rem;
+    left: 1.6rem;
+    font-size: 1.7rem;
+  }
+
+  .article1 .articleSoon,
+  .article3 .articleSoon {
+    top: 23.8rem;
+  }
+
+  /* СТРАНИЦА О ПРОЕКТЕ */
+  .aboutPage .header {
+    height: 9rem;
+  }
+
+  /* первый экран */
+  .aboutHero {
+    height: 46.5rem;
+    background-size: 129.4rem auto;
+    background-position: -25rem 1.1rem;
+  }
+
+  .aboutHeroTitle {
+    top: 28.4rem;
+    left: 0;
+    padding-left: 1.3rem;
+    font-size: 8.76rem;
+  }
+
+  /* основное о проекте */
+  .about {
+    padding: 0 3.2rem 7rem;
+  }
+
+  .aboutTitle {
+    max-width: 60rem;
+    font-size: 4.6rem;
+    line-height: 4.2rem;
+  }
+
+  .aboutIntro {
+    max-width: 50rem;
+    margin-top: 1.6rem;
+    font-size: 1.9rem;
+    line-height: 2.7rem;
+  }
+
+  .aboutIntro br:not(.brTablet),
+  .whyText br,
+  .missionText br,
+  .problemTitle br,
+  .problemText br {
+    display: none;
+  }
+
+  .aboutBlock {
+    margin-top: 6rem;
+  }
+
+  .aboutWhy {
+    margin-top: 4.4rem;
+  }
+
+  .aboutHeading {
+    gap: 2rem;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+  }
+
+  .aboutIntro .brTablet {
+    display: inline;
+  }
+
+  .aboutWhy .aboutHeading {
+    max-width: 39rem;
+  }
+
+  .aboutNum {
+    flex-shrink: 0;
+    font-size: 4.8rem;
+    -webkit-text-stroke: 1.2rem #ec2a7c;
+  }
+
+  /* зачем мы это делаем */
+  .whyText {
+    width: 35.2rem;
+    margin-top: 1.6rem;
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+  }
+
+  .mission {
+    top: 6.7rem;
+    left: 39.1rem;
+    width: 31.2rem;
+    height: 22.6rem;
+    padding: 3.2rem 2.4rem 0 3.2rem;
+  }
+
+  .missionTitle {
+    font-size: 2.3rem;
+  }
+
+  .missionText {
+    margin-top: 0.6rem;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+  }
+
+  .stars {
+    top: 4.8rem;
+    left: 62.9rem;
+    width: 9.6rem;
+    height: 8.6rem;
+  }
+
+  /* страшные столкновения */
+  .problems {
+    gap: 1.75rem;
+    margin-top: 1.3rem;
+  }
+
+  .problem {
+    width: 22.3rem;
+    height: 29.5rem;
+    padding: 2rem 1.9rem 0 1.8rem;
+  }
+
+  .problemNum {
+    font-size: 2.1rem;
+  }
+
+  .problemTitle {
+    max-width: 17rem;
+    min-height: 5.4rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+
+  .problemText {
+    margin-top: 0.8rem;
+    font-size: 1.7rem;
+    line-height: 2.6rem;
+  }
+
+  /* для кого проект */
+  .audience {
+    gap: 1.6rem;
+    margin-top: 2.4rem;
+  }
+
+  .forYou,
+  .youGet {
+    width: 34.4rem;
+    height: 31rem;
+    padding: 1.2rem 1.8rem 0;
+  }
+
+  .audienceTitle {
+    font-size: 2.3rem;
+  }
+
+  .checkList {
+    margin-top: 0.6rem;
+  }
+
+  .checkList li {
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+  }
+
+  .checkList li + li {
+    margin-top: 0.7rem;
+  }
+
+  .youGet .checkList li {
+    max-width: 27.8rem;
+  }
+
+  .checkList li::before {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-top: 0.5rem;
+  }
+
+  /* что мы делаем */
+  .aboutBlock:has(.doList) {
+    margin-top: 5.3rem;
+  }
+
+  .aboutBlock:has(.doList) .aboutHeading {
+    line-height: 2.5rem;
+  }
+
+  .doList {
+    gap: 1.8rem;
+    margin-top: 28px;
+  }
+
+  .doTitle {
+    height: 4.6rem;
+    padding: 0 1.8rem;
+    font-size: 2.1rem;
+  }
+
+  .doItem.open .doTitle {
+    height: 5.6rem;
+    padding-top: 1.2rem;
+    padding-right: 5rem;
+  }
+
+  .doText {
+    padding: 0 1.8rem;
+    max-width: 50rem;
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+  }
+
+  .doText::after {
+    height: 2.7rem;
+  }
+
+  .doItem.open::after {
+    top: 1.6rem;
+    right: 1.6rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  /* знай их в лицо */
+  .team {
+    gap: 1rem;
+    margin: 2.2rem 0 0 -0.6rem;
+  }
+
+  .member {
+    width: 23rem;
+    height: 33.3rem;
+  }
+
+  .member1 {
+    background-image: url(../images/tabik1.svg);
+  }
+  .member2 {
+    background-image: url(../images/tabik2.svg);
+  }
+  .member3 {
+    background-image: url(../images/tabik3.svg);
+  }
+
+  .memberRole {
+    top: 23.6rem;
+    left: 2.6rem;
+    width: 17rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .memberName {
+    top: 27.9rem;
+    left: 2.6rem;
+    font-size: 1.5rem;
+  }
+
+  .memberFigureBox {
+    display: none;
+  }
+
+  .aboutPage .section5 {
+    height: 26.6rem;
+  }
+
+  .aboutPage .section5 .title5 {
+    top: 5.1rem;
+  }
+
+  .aboutPage .section5 .text5 {
+    top: 9.9rem;
+  }
+
+  .aboutPage .section5 .button5 {
+    top: 16.3rem;
   }
 }

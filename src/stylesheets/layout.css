@@ -1351,6 +1351,10 @@ body {
   color: #0f1d3a;
 }
 
+.brTablet {
+  display: none;
+}
+
 .aboutBlock {
   position: relative;
   margin-top: 10.5rem;
@@ -1571,7 +1575,7 @@ body {
   position: relative;
   background-color: #ec2a7c;
   border: 0.3rem solid #0f1d3a;
-  box-shadow: 0 0.6rem 0 #0f1d3a;
+  box-shadow: -0.6rem 0.6rem 0 #0f1d3a;
   transition: background-color ease 0.4s;
 }
 
