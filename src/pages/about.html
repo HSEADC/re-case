@@ -193,16 +193,31 @@
       </p>
       <p class="text6">Не пропусти главное с командой РЕ:КЕЙС</p>
 
-      <form class="form" action="https://formspree.io/f/maeqyzke" method="POST">
+      <form class="form" id="subscribeForm">
         <input
           class="formEmail"
           type="email"
           name="email"
           placeholder="Твоя почта"
           required
+          data-fs-field
         />
-        <button class="formButton" type="submit">Подписаться</button>
+        <button class="formButton" type="submit" data-fs-submit-btn>Подписаться</button>
       </form>
+      <p class="formMessage" data-fs-success>Спасибо! Теперь ты стал частью РЕ:КЕЙСА</p>
+      <p class="formMessage" data-fs-error>Что-то пошло не так, попробуй ещё раз</p>
     </section>
+    <script>
+      window.formspree =
+        window.formspree ||
+        function () {
+          (formspree.q = formspree.q || []).push(arguments)
+        }
+      formspree('initForm', {
+        formElement: '#subscribeForm',
+        formId: 'xeaaeebz'
+      })
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
   </body>
 </html>

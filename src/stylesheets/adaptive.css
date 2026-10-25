@@ -521,6 +521,12 @@
     font-size: 1.4rem;
   }
 
+  .formMessage {
+    top: 37.4rem;
+    left: 1.6rem;
+    font-size: 1.4rem;
+  }
+
   /* СТРАНИЦА ИНТЕРВЬЮ */
   .interviewPage {
     background-size: 32rem 32rem;
@@ -1276,7 +1282,7 @@
     overflow: hidden;
   }
 
-  /* меню: салатовая панель под шапкой */
+  /* меню */
   :is(.sec1, .header) .mainMenu {
     display: none;
     flex-direction: column;
@@ -1710,6 +1716,12 @@
     width: 52rem;
     height: 5.9rem;
     background-position: 1.851rem center;
+  }
+
+  .section6 .formMessage {
+    top: 40.2rem;
+    left: 12.4rem;
+    font-size: 1.5rem;
   }
 
   .section6 .formButton {

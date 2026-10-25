@@ -216,7 +216,7 @@ body {
 
 .text2 {
   position: absolute;
-  top: 45.5rem;
+  top: 44.5rem;
   left: 54rem;
   letter-spacing: -0.3rem;
   z-index: 2;
@@ -764,6 +764,27 @@ body {
 
 .formButton:hover {
   background-image: url(../images/btformhov.svg);
+}
+
+.formMessage {
+  display: none;
+  position: absolute;
+  top: 42.2rem;
+  left: 51.6rem;
+  font-family: 'Onest';
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #ec2a7c;
+  text-align: left;
+}
+
+.section6 .formMessage[data-fs-active] {
+  display: block;
+  color: #ec2a7c;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
 }
 
 /* СТРАНИЦА ИНТЕРВЬЮ */
