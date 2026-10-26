@@ -4,7 +4,7 @@
 
 Ссылки
 
-Сайт: https://hseadc.github.io/re-case/ 1.2. Макет в Figma: https://clck.ru/3Wgetd
+Сайт: https://hseadc.github.io/re-case/ Макет в Figma: https://clck.ru/3Wgetd
 
 Команда и роли
 
